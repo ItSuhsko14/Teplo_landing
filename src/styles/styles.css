@@ -7,4 +7,14 @@
 body {
     min-height: 100vh;
     background-color: #FFFCEA;
+    font-family: Montserrat, sans-serif;
+}
+
+.blockTitle {
+    font-family: Montserrat, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    text-align: left;
+    margin-bottom: 48px;
 }

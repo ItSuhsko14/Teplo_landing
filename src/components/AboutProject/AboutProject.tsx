@@ -5,10 +5,10 @@ interface AboutProjectProps {
 }
 
 const AboutProject: React.FC<AboutProjectProps> = ({ }) => {
-    return (
-        <section className={styles.container}>
+  return (
+    <section className={styles.container}>
             <div className={styles.title}>
-                Про проект
+                Про проєкт
             </div>
             <div className={styles.description}>
                 “Тепло на передову” - волонтерська ініціатива, яка діє з початку
@@ -23,8 +23,8 @@ const AboutProject: React.FC<AboutProjectProps> = ({ }) => {
             <div className={styles.buttonDetailed}>
                 Детальніше
             </div>
-        </section>
-    );
+    </section>
+  );
 }
 
 export default AboutProject;
