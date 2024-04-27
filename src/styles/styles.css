@@ -4,12 +4,22 @@
     padding: 0;
 }
 
+:root {
+    --title-light-color: #D8E4F0;
+    --title-dark-color: #061C33;
+  }
+
 body {
     min-height: 100vh;
+    width: 100%;
     background-color: #FFFCEA;
     font-family: Montserrat, sans-serif;
 }
 
+.main {
+    min-width: 100%;
+    min-height: 100%;
+}
 .blockTitle {
     font-family: Montserrat, sans-serif;
     font-size: 24px;
@@ -17,4 +27,23 @@ body {
     line-height: 32px;
     text-align: left;
     margin-bottom: 48px;
+}
+
+.title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    text-align: center;
+    color: #D8E4F0;
+    margin-top: 48px;
+    margin-bottom: 40px;
+}
+
+.lightColor {
+    color: var(--title-light-color)
+}
+
+.darkColor {
+    color: var(--title-dark-color)
 }

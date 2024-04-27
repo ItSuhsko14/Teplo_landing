@@ -1,0 +1,36 @@
+.container {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 32px;
+}
+
+.main{
+    border-radius: 24px;
+    background: url('./background.png');
+    background-size: cover;
+}
+
+.mainTitle {
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    background-color: var(--title-light-color);
+    border-radius: 24px 24px 0 0;
+    padding: 12px 0 10px 0;
+}
+
+.cta {
+    border-radius: 24px;
+    background-color: #FFF294;
+    text-align: center;
+    padding: 8px 0 8px 0;
+}
