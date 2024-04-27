@@ -1,4 +1,3 @@
-import { symlink } from 'fs';
 import React from 'react';
 import Post from './post';
 let styles = require('./telegram.module.css')
