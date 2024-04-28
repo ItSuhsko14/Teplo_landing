@@ -1,5 +1,5 @@
 import React from 'react';
-import Post from './post';
+import Post from './Post'
 let styles = require('./telegram.module.css')
 
 const Telegram: React.FC = () => {
