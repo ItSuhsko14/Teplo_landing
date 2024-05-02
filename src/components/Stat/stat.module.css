@@ -35,15 +35,15 @@
 
 .background1 {
     background-image: url('./img1.png'); 
-    background-size: cover; /* Забезпечуємо розтягнення зображення на весь блок */
-    background-position: center bottom; /* Позиція зображення: по центру по горизонталі і внизу по вертикалі */
+    background-size: cover; 
+    background-position: center bottom;
     background-repeat: no-repeat; 
 }
 
 .background2 {
     background-image: url('./img2.png'); 
-    background-size: cover; /* Забезпечуємо розтягнення зображення на весь блок */
-    background-position: center bottom; /* Позиція зображення: по центру по горизонталі і внизу по вертикалі */
+    background-size: cover;
+    background-position: center bottom;
     background-repeat: no-repeat; 
 }
 

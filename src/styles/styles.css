@@ -38,6 +38,9 @@ body {
     color: #D8E4F0;
     margin-top: 48px;
     margin-bottom: 40px;
+    letter-spacing: 0%;
+    
+    
 }
 
 .lightColor {
@@ -47,3 +50,4 @@ body {
 .darkColor {
     color: var(--title-dark-color)
 }
+

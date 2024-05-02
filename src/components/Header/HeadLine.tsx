@@ -1,6 +1,6 @@
 import React from 'react';
 let styles = require('./headline.module.css');
-import  logo from './logo.png'
+import logo from './logo.png'
 import burger from './burger.png'
 import telegram from './telegram.png'
 
