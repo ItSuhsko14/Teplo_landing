@@ -1,5 +1,6 @@
 import React from 'react'
 let styles = require('./howwetowork.module.css')
+import CTA from './cta';
 import img1 from './img1.png';
 import img2 from './img2.png';
 import img3 from './img3.png';
@@ -48,7 +49,9 @@ const HowWeToWork = () => {
                 </div>            
                 
             </div>
+
       </div>
+      <CTA />
     </div>
   )
 }
