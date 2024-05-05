@@ -12,7 +12,9 @@ const Telegram: React.FC = () => {
   return (
     <div className={styles.container}>
       <div className='title darkColor'>Наш телеграм</div>
-      <div className={styles.text}></div>
+      <div className={styles.text}>
+        Будь в курсі наших останніх новин - підписуйся на телеграм канал!
+      </div>
       <div className={styles.main}>
         <div className={styles.mainTitle}>-= ТЕПЛО НА ПЕРЕДОВУ =-</div>
         <div className={styles.mainContent}>
