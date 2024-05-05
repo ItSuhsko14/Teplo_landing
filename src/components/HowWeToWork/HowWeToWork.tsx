@@ -12,7 +12,7 @@ const HowWeToWork = () => {
       <div className={styles.container}>
 
         <div className="title darkColor">
-            Ковертуємо донати в перемогу
+            Конвертуємо донати в перемогу
         </div>
         <div className={styles.stepsContainer}>
                 
