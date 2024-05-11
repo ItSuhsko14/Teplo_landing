@@ -1,8 +1,14 @@
 import React, { useState, useEffect } from "react";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { Gallery } from "react-grid-gallery";
+let styles = require("./telegram.module.css");
 
 interface ImageData {
   download_url: string;
+  width: number;
+  height: number;
+  isSelected: boolean;
+  caption: string;
+  className: string;
 }
 
 const Post: React.FC<{ text: string }> = ({ text }) => {
@@ -10,7 +16,7 @@ const Post: React.FC<{ text: string }> = ({ text }) => {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch("https://picsum.photos/v2/list?page=2&limit=10")
+    fetch("https://picsum.photos/v2/list?page=2&limit=3")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch images");
@@ -25,28 +31,35 @@ const Post: React.FC<{ text: string }> = ({ text }) => {
     return <div>Error: {error}</div>;
   }
 
-  return (
-    <div>
-      {listOfImages.length > 0 ? (
-        listOfImages.map((imageData, index) => {
-          const imgUrl = imageData.download_url; // Посилання на зображення
-          const img = getImage(imgUrl);
+  const images = listOfImages.map((imageData, index) => {
+    return {
+      src: imageData.download_url,
+      width: imageData.width,
+      height: imageData.height,
+      isSelected: false,
+      caption: `Image ${index}`,
+      className: styles.galleryImage,
+    };
+  });
 
-          return (
-            <div key={index}>
-              <img
-                src={imgUrl}
-                alt={`Image ${index}`}
-                style={{ width: "30%" }}
-              />
-              {img && <GatsbyImage image={img} alt={`Image ${index}`} />}
-            </div>
-          );
-        })
-      ) : (
-        <div>Loading...</div>
-      )}
-      {text}
+  return (
+    <div className={styles.postContainer}>
+      <div className={styles.galleryContainer}>
+        <Gallery images={images} enableImageSelection={false} />
+      </div>
+      <p className={styles.postText}>
+        Стабілізаційний пункт 93-ї бригади Холодний Яр на Бахмутському напрямку.
+        Тут рятують життя та повертають до строю поранених бійців, які мужньо
+        відстоюють наші цінності та свободу на передовій. Медики працюють
+        максимально злагоджено, їхні дії доведені до автоматизму. Кожне
+        врятоване життя – це також перемога у війні. Завдяки зусиллям медиків у
+        багатьох холодноярців з’явився другий день народження. Стабілізувати
+        стан воїна, в разі критичної потреби здійснити первинне хірургічне
+        втручання та доправити його до шпиталю – основна місія, що вимагає від
+        медиків рішучості, стійкості, самовідданості та високого рівня
+        професіоналізму. Великий уклін та подяка медикам за їх повсякденну важку
+        працю!
+      </p>
     </div>
   );
 };

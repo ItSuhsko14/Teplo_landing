@@ -1,53 +1,58 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
-    --title-light-color: #D8E4F0;
-    --title-dark-color: #061C33;
-  }
+  --title-light-color: #d8e4f0;
+  --title-dark-color: #061c33;
+}
 
 body {
-    min-height: 100vh;
-    width: 100%;
-    background-color: #FFFCEA;
-    font-family: Montserrat, sans-serif;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #fffcea;
+  font-family: Montserrat, sans-serif;
 }
 
 .main {
-    min-width: 100%;
-    min-height: 100%;
+  min-width: 100%;
+  min-height: 100%;
 }
 .blockTitle {
-    font-family: Montserrat, sans-serif;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 32px;
-    text-align: left;
-    margin-bottom: 48px;
+  font-family: Montserrat, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: left;
+  margin-bottom: 48px;
 }
 
 .title {
-    font-family: "Montserrat", sans-serif;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 32px;
-    text-align: center;
-    color: #D8E4F0;
-    margin-top: 48px;
-    margin-bottom: 40px;
-    letter-spacing: 0%;
-    
-    
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: center;
+  color: #d8e4f0;
+  margin-top: 48px;
+  margin-bottom: 40px;
+  letter-spacing: 0%;
 }
 
 .lightColor {
-    color: var(--title-light-color)
+  color: var(--title-light-color);
 }
 
 .darkColor {
-    color: var(--title-dark-color)
+  color: var(--title-dark-color);
 }
 
+.react-grid-gallery img {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  max-height: 200px;
+  border: 3px solid red;
+}

@@ -19,6 +19,7 @@ const Telegram: React.FC = () => {
         <div className={styles.mainTitle}>-= ТЕПЛО НА ПЕРЕДОВУ =-</div>
         <div className={styles.mainContent}>
           <Post text="post text" />
+          <Post text="post text" />
           {/* {posts.map((post) => (
             <Post text={post.text} />
           ))} */}

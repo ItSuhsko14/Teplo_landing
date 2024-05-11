@@ -16,6 +16,13 @@
   border-radius: 24px;
   background: url("./background.png");
   background-size: cover;
+  background-color: #fff7bf;
+}
+
+.mainContent {
+  padding: 8px;
+  height: 60vh;
+  overflow-y: auto;
 }
 
 .mainTitle {
@@ -30,7 +37,33 @@
 
 .cta {
   border-radius: 24px;
+  font-weight: 600;
   background-color: #fff294;
   text-align: center;
-  padding: 8px 0 8px 0;
+  padding: 12px 0 12px 0;
+  box-shadow: 0px 0px 10px 0px #9f92355c;
+}
+
+.postGallery div {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  max-height: 200px;
+  border: 3px solid red;
+}
+
+.galleryContainer {
+  margin-bottom: 16px;
+}
+
+.postContainer {
+  background-color: white;
+  border-radius: 16px;
+  padding: 8px;
+  margin-bottom: 16px;
+}
+
+.postText {
+  font-size: 16px;
+  line-height: 24px;
 }
