@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 let styles = require("./headline.module.css");
 import logo from "./logo.png";
-
 import telegram from "./telegram.png";
 
 import Drawer from "@mui/material/Drawer";
@@ -10,6 +9,7 @@ import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
 
 interface HeaderProps {}
 
@@ -29,6 +29,13 @@ const HeadLine: React.FC = ({}) => {
       setOpen(open);
     };
 
+  const menuList = [
+    { name: "Про нас", link: "#about" },
+    { name: "Наші досягнення", link: "#stat" },
+    { name: "Конвертуємо донати", link: "#howwetowork" },
+    { name: "Телеграм канал", link: "#telegram" },
+  ];
+
   return (
     <div className={styles.container}>
       <div>
@@ -43,18 +50,37 @@ const HeadLine: React.FC = ({}) => {
           <IconButton onClick={toggleDrawer(true)} color="inherit">
             <MenuIcon />
           </IconButton>
-          <Drawer anchor="right" open={open} onClose={toggleDrawer(false)}>
-            <List>
-              <ListItem button>
-                <ListItemText primary="Пункт меню 1" />
-              </ListItem>
-              <ListItem button>
-                <ListItemText primary="Пункт меню 2" />
-              </ListItem>
-              <ListItem button>
-                <ListItemText primary="Пункт меню 3" />
-              </ListItem>
-            </List>
+          <Drawer
+            anchor="right"
+            open={open}
+            onClose={toggleDrawer(false)}
+            style={{
+              backgroundColor: "transparent",
+              width: "100%",
+            }}
+          >
+            <div className={styles.menuContainer}>
+              <IconButton
+                className={styles.closeButton}
+                onClick={toggleDrawer(false)}
+                color="inherit"
+              >
+                <CloseIcon />
+              </IconButton>
+              <List>
+                {menuList.map((menu) => (
+                  <a href={menu.link} className={styles.menuItem}>
+                    <ListItem
+                      button
+                      key={menu.name}
+                      className={styles.menuItem}
+                    >
+                      <ListItemText primary={menu.name} />
+                    </ListItem>
+                  </a>
+                ))}
+              </List>
+            </div>
           </Drawer>
         </div>
       </div>

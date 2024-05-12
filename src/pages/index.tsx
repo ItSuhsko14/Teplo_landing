@@ -6,7 +6,7 @@ import AboutProject from "../components/AboutProject/AboutProject";
 import Stat from "../components/Stat/Stat";
 import HowWeToWork from "../components/HowWeToWork/HowWeToWork";
 import Telegram from "../components/Telegram/Telegram";
-import Post from "../components/Telegram/Post";
+import Detailed from "../components/Detailed/Detailed";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -16,6 +16,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <Stat />
       <HowWeToWork />
       <Telegram />
+      <Detailed />
     </main>
   );
 };
