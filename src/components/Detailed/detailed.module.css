@@ -52,3 +52,7 @@
   height: 282px;
   margin-bottom: 32px;
 }
+
+.galleryImage {
+  border-radius: 30px;
+}

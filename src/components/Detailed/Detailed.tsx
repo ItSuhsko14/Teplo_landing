@@ -1,5 +1,22 @@
 import React from "react";
 let styles = require("./detailed.module.css");
+import ImageGallery from "react-image-gallery";
+import "react-image-gallery/styles/css/image-gallery.css";
+
+const images = [
+  {
+    original: "img1.png",
+    thumbnail: "https://picsum.photos/id/1018/250/150/",
+  },
+  {
+    original: "https://picsum.photos/id/1015/1000/600/",
+    thumbnail: "https://picsum.photos/id/1015/250/150/",
+  },
+  {
+    original: "https://picsum.photos/id/1019/1000/600/",
+    thumbnail: "https://picsum.photos/id/1019/250/150/",
+  },
+];
 
 interface DetailedProps {}
 
@@ -30,7 +47,14 @@ const Detailed: React.FC<DetailedProps> = ({}) => {
         platea sed ut. Id bibendum varius lorem pretium sagittis et turpis.
       </div>
       <div className={styles.photoSlider}>
-        <img src="https://picsum.photos/200/200" alt="photo" />
+        <ImageGallery
+          items={images}
+          showThumbnails={false}
+          showNav={false}
+          showBullets={true}
+          originalClass={styles.galleryImage}
+          thumbnailPosition="bottom"
+        />
       </div>
       <div className={styles.description}>
         Lorem ipsum dolor sit amet consectetur. Feugiat euismod sit odio in.
