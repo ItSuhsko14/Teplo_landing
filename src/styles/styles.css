@@ -58,7 +58,7 @@ body {
 
 .image-gallery-bullets .image-gallery-bullets-container {
   position: relative;
-  bottom: -30px;
+  bottom: -44px;
   box-shadow: none;
   border: none !important;
   display: flex;
@@ -105,14 +105,14 @@ body {
   right: 40px !important;
 }
 .image-gallery-left {
-  transform: translate3d(-95%, 0px, 0px) !important;
-  width: 80% !important;
+  transform: translate3d(-98%, 0px, 0px) !important;
+  width: 70% !important;
   height: auto;
 }
 
 .image-gallery-right {
-  transform: translate3d(120%, 0px, 0px) !important;
-  width: 80% !important;
+  transform: translate3d(140%, 0px, 0px) !important;
+  width: 70% !important;
 }
 
 .customImageGallery .image-gallery-slide-wrapper .image-gallery-slide {

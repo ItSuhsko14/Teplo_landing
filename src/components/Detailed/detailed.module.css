@@ -54,13 +54,9 @@
   text-decoration: underline;
 }
 
-.photoSliderContainer {
-  height: 282px;
-  margin-bottom: 32px;
-}
-
 .photoSlider {
   height: 282px;
+  margin-bottom: 32px;
 }
 
 .galleryImage {
