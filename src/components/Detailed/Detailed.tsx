@@ -41,12 +41,12 @@ interface DetailedProps {}
 const Detailed: React.FC<DetailedProps> = ({}) => {
   return (
     <>
-      <section className={`${styles.container} ${styles.secondDescription}`}>
+      <section className={styles.container}>
         <div className={styles.title} id="about">
-          <p>Детальніше про проєкт</p>
+          <p>Детальніше про</p>
           <p>"Тепло на передову"</p>
         </div>
-        <div className={styles.description}>
+        <div className={`${styles.description} ${styles.firstDescription}`}>
           Lorem ipsum dolor sit amet consectetur. Feugiat euismod sit odio in.
           Diam quam condimentum ultrices in. Magna in consequat lacus neque
           scelerisque ut tempor purus. Accumsan a mauris lacus vulputate nulla
@@ -78,7 +78,7 @@ const Detailed: React.FC<DetailedProps> = ({}) => {
         />
       </div>
       <section className={styles.container}>
-        <div className={styles.description}>
+        <div className={`${styles.description} ${styles.secondDescription}`}>
           Lorem ipsum dolor sit amet consectetur. Feugiat euismod sit odio in.
           Diam quam condimentum ultrices in. Magna in consequat lacus neque
           scelerisque ut tempor purus. Accumsan a mauris lacus vulputate nulla

@@ -19,6 +19,23 @@ const config: GatsbyConfig = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-plugin-webfonts`,
+      options: {
+        fonts: {
+          google: [
+            {
+              family: "Montserrat",
+              variants: ["400", "700"],
+            },
+            {
+              family: "Exo 2",
+              variants: ["400", "700"],
+            },
+          ],
+        },
+      },
+    },
   ],
 }
 
