@@ -19,7 +19,7 @@
 }
 
 .description {
-  background-repeat: space repeat-y;
+  background-repeat: repeat-y;
   background-position: top;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
