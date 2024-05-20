@@ -75,6 +75,8 @@ const Detailed: React.FC<DetailedProps> = ({}) => {
           showBullets={true}
           thumbnailPosition="bottom"
           additionalClass={styles.customImageGallery}
+          showFullscreenButton={false}
+          autoPlay={true}
         />
       </div>
       <section className={styles.container}>
