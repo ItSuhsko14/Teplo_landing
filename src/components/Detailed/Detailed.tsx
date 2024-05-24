@@ -3,6 +3,7 @@ let styles = require("./detailed.module.css");
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 
+let rightArrow = require("./buttonLeft.png");
 const images = [
   {
     original: require("./img1.png").default,
@@ -39,6 +40,21 @@ const images = [
 interface DetailedProps {}
 
 const Detailed: React.FC<DetailedProps> = ({}) => {
+  const renderRightNav = (
+    onClick: React.MouseEventHandler<HTMLButtonElement>,
+    disabled: boolean
+  ) => {
+    return (
+      <button
+        className={`${styles.navButton} ${styles.rightNav}`}
+        onClick={onClick}
+        disabled={disabled}
+      >
+        <img src={rightArrow} alt="Right" />
+      </button>
+    );
+  };
+
   return (
     <>
       <section className={styles.container}>
@@ -77,6 +93,7 @@ const Detailed: React.FC<DetailedProps> = ({}) => {
           additionalClass={styles.customImageGallery}
           showFullscreenButton={false}
           autoPlay={true}
+          renderRightNav={renderRightNav}
         />
       </div>
       <section className={styles.container}>
