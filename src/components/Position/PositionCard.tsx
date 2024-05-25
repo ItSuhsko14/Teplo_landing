@@ -22,7 +22,14 @@ const PositionCard: React.FC<PositionCardProps> = ({
       <h2 className={styles.cardTitle}>{name}</h2>
       <img src={img} alt="123" className={styles.cardImg} />
       <p className={styles.cardText}>{text}</p>
-      <button className={styles.cardButton}>{button}</button>
+      <a
+        href="https://send.monobank.ua/jar/pAH2wwD8n"
+        target="_blank"
+        rel="noopener noreferrer"
+        className={styles.cardButton}
+      >
+        {button}
+      </a>{" "}
     </div>
   );
 };

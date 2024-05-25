@@ -6,22 +6,17 @@
       "button": "Купити м’які ноші для захисників"
     },
     {
-      "name": "Position 2",
+      "name": "М'які ноші",
       "img": "./img1.png",
-      "text": "This is a description for position 2.",
-      "button": "Apply Now"
+      "text": "Lorem ipsum dolor sit amet consectetur. In quam ac cras pretium lobortis. Aliquet lacus morbi ut enim. Lorem ipsum dolor sit amet consectetur. In quam ac cras pretium lobortis. Lorem ipsum dolor sit amet consectetur. In quam ac cras pretium lobortis. Aliquet lacus morbi ut enim.",
+      "button": "Купити м’які ноші для захисників"
     },
     {
-      "name": "Position 3",
+      "name": "М'які ноші",
       "img": "./img1.png",
-      "text": "This is a description for position 3.",
-      "button": "Read More"
-    },
-    {
-      "name": "Position 4",
-      "img": "./img1.png",
-      "text": "This is a description for position 4.",
-      "button": "Get Started"
+      "text": "Lorem ipsum dolor sit amet consectetur. In quam ac cras pretium lobortis. Aliquet lacus morbi ut enim. Lorem ipsum dolor sit amet consectetur. In quam ac cras pretium lobortis. Lorem ipsum dolor sit amet consectetur. In quam ac cras pretium lobortis. Aliquet lacus morbi ut enim.",
+      "button": "Купити м’які ноші для захисників"
     }
+   
   ]
   
