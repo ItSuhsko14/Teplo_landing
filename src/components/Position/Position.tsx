@@ -44,7 +44,7 @@ const Position: React.FC = () => {
     }
   };
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="position">
       <div className={styles.blockTitle}>Позиції допомоги</div>
 
       <Slider ref={sliderRef} {...settings}>

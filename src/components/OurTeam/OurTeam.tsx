@@ -44,7 +44,7 @@ const OurTeam: React.FC = () => {
     }
   };
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="team">
       <div className={styles.blockTitle}>Наша команда</div>
       <div className={styles.mainText}>
         Lorem ipsum dolor sit amet consectetur. In quam ac cras pretium

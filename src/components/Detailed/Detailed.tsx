@@ -57,7 +57,7 @@ const Detailed: React.FC<DetailedProps> = ({}) => {
 
   return (
     <>
-      <section className={styles.container}>
+      <section className={styles.container} id="detailed">
         <div className={styles.title} id="about">
           <p>Детальніше про</p>
           <p>"Тепло на передову"</p>

@@ -4,6 +4,17 @@
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: none;
+}
+
 :root {
   --title-light-color: #d8e4f0;
   --title-dark-color: #061c33;
@@ -16,8 +27,10 @@ body {
 }
 
 .main {
-  min-width: 100%;
+  width: 100%;
   min-height: 100%;
+  max-width: 480px;
+  margin: 0 auto;
 }
 .blockTitle {
   font-family: Montserrat, sans-serif;

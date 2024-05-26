@@ -2,7 +2,6 @@ import React, { useState } from "react";
 let styles = require("./headline.module.css");
 import logo from "./logo.png";
 import telegram from "./telegram.png";
-
 import Drawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
@@ -34,6 +33,9 @@ const HeadLine: React.FC = ({}) => {
     { name: "Наші досягнення", link: "#stat" },
     { name: "Конвертуємо донати", link: "#howwetowork" },
     { name: "Телеграм канал", link: "#telegram" },
+    { name: "Детальніше про тепло", link: "#detailed" },
+    { name: "Позиції допомоги", link: "#position" },
+    { name: "Наша команда", link: "#team" },
   ];
 
   return (
@@ -42,10 +44,22 @@ const HeadLine: React.FC = ({}) => {
         <img src={logo} className={styles.logo} />
       </div>
       <div className={styles.buttoncontainer}>
-        <button className={styles.button}>Підтримати</button>
+        <a
+          href="https://send.monobank.ua/jar/pAH2wwD8n"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className={styles.button}>Підтримати</button>
+        </a>
       </div>
       <div className={styles.menucontainer}>
-        <img src={telegram} className={styles.telegram} />
+        <a
+          href="https://t.me/teplonaperedovu"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={telegram} className={styles.telegram} />
+        </a>
         <div className={styles.burgercontainer}>
           <IconButton onClick={toggleDrawer(true)} color="inherit">
             <MenuIcon />
@@ -69,12 +83,12 @@ const HeadLine: React.FC = ({}) => {
               </IconButton>
               <List>
                 {menuList.map((menu) => (
-                  <a href={menu.link} className={styles.menuItem}>
-                    <ListItem
-                      button
-                      key={menu.name}
-                      className={styles.menuItem}
-                    >
+                  <a
+                    href={menu.link}
+                    className={styles.menuItem}
+                    onClick={() => setOpen(false)}
+                  >
+                    <ListItem key={menu.name} className={styles.menuItem}>
                       <ListItemText primary={menu.name} />
                     </ListItem>
                   </a>
