@@ -9,6 +9,7 @@ import HowWeToWork from "../components/HowWeToWork/HowWeToWork";
 import Telegram from "../components/Telegram/Telegram";
 import Detailed from "../components/Detailed/Detailed";
 import Position from "../components/Position/Position";
+import OurTeam from "../components/OurTeam/OurTeam";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -21,6 +22,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <Telegram />
       <Detailed />
       <Position />
+      <OurTeam />
     </main>
   );
 };

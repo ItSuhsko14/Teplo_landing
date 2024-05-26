@@ -13,12 +13,12 @@
 }
 
 /* .slider:first-child {
-  margin-left: 16px;
-}
-
-.slider:last-child {
-  margin-right: 16px;
-} */
+    margin-left: 16px;
+  }
+  
+  .slider:last-child {
+    margin-right: 16px;
+  } */
 
 .slideContainer {
   padding: 0 4px 4px 4px;
@@ -28,7 +28,7 @@
   padding: 16px;
   /* margin: 0 8px; */
   border-radius: 30px;
-  background-color: #e2f5ff;
+  background-color: #fffad4;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,6 +36,9 @@
   box-sizing: border-box;
   height: 100%;
   box-shadow: 0px 4px 4px 0px #7da0b940;
+  background-image: url(./backgroundPattern.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
 }
 
 .blockTitle {
@@ -44,6 +47,14 @@
   line-height: 32px;
   text-align: center;
   margin: 0 auto 32px auto;
+}
+
+.mainText {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  padding: 0 16px;
 }
 
 .cardTitle {
@@ -67,6 +78,22 @@
   line-height: 24px;
   text-align: left;
   margin-bottom: 32px;
+}
+
+.cardText {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  margin-bottom: 32px;
+}
+
+.role {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  width: 100%;
 }
 
 .cardButton {

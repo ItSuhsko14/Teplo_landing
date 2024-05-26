@@ -16,8 +16,8 @@ const PositionCard: React.FC<PositionCardProps> = ({
 }) => {
   return (
     <div className={styles.cardContainer}>
-      <h2 className={styles.cardTitle}>{name}</h2>
       <img src={img} alt="123" className={styles.cardImg} />
+      <h2 className={styles.cardTitle}>{name}</h2>
       <p className={styles.cardText}>{text}</p>
       <a
         href="https://send.monobank.ua/jar/pAH2wwD8n"

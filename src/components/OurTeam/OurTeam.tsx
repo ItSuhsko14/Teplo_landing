@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
-import PositionCard from "./PositionCard";
-import positions from "./positionInfo.json";
-let styles = require("./position.module.css");
+import TeamCard from "./TeamCard";
+import team from "./team.json";
+let styles = require("./ourTeam.module.css");
 import leftButton from "./buttonLeft.png";
 import rightButton from "./buttonRight.png";
 import Slider from "react-slick";
@@ -9,13 +9,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./slider.css";
 
-const Position: React.FC = () => {
+const OurTeam: React.FC = () => {
   let sliderRef = useRef(null);
 
   const images = [
     { original: require("./img1.png").default },
-    { original: require("./img2.png").default },
-    { original: require("./img3.png").default },
+    { original: require("./img1.png").default },
+    { original: require("./img1.png").default },
   ];
 
   var settings = {
@@ -45,12 +45,19 @@ const Position: React.FC = () => {
   };
   return (
     <div className={styles.container}>
-      <div className={styles.blockTitle}>Позиції допомоги</div>
+      <div className={styles.blockTitle}>Наша команда</div>
+      <div className={styles.mainText}>
+        Lorem ipsum dolor sit amet consectetur. In quam ac cras pretium
+        lobortis. Aliquet lacus morbi ut enim. Lorem ipsum dolor sit amet
+        consectetur. In quam ac cras pretium lobortis. Lorem ipsum dolor sit
+        amet consectetur. In quam ac cras pretium lobortis. Aliquet lacus morbi
+        ut enim.
+      </div>
 
       <Slider ref={sliderRef} {...settings}>
-        {positions.map((item, index) => (
+        {team.map((item, index) => (
           <div className={styles.slideContainer} key={index}>
-            <PositionCard
+            <TeamCard
               name={item.name}
               button={item.button}
               text={item.text}
@@ -67,4 +74,4 @@ const Position: React.FC = () => {
   );
 };
 
-export default Position;
+export default OurTeam;
