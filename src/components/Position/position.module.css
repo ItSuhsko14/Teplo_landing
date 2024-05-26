@@ -11,16 +11,16 @@
   box-sizing: border-box;
 }
 
-.slider:first-child {
+/* .slider:first-child {
   margin-left: 16px;
 }
 
 .slider:last-child {
   margin-right: 16px;
-}
+} */
 
 .slideContainer {
-  margin: 0 4px 0 4px;
+  padding: 0 4px;
 }
 
 .cardContainer {
@@ -83,6 +83,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
 }
 
 .controlContainer {

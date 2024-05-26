@@ -4,10 +4,13 @@ import positions from "./positionInfo.json";
 let styles = require("./position.module.css");
 import leftButton from "./buttonLeft.png";
 import rightButton from "./buttonRight.png";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "./slider.css";
 
 const Position: React.FC = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const sliderRef = useRef(null);
+  let sliderRef = useRef(null);
 
   const images = [
     { original: require("./img1.png").default },
@@ -15,35 +18,37 @@ const Position: React.FC = () => {
     { original: require("./img3.png").default },
   ];
 
-  const handlePrevClick = () => {
-    setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + positions.length) % positions.length
-    );
+  var settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    autoplay: false,
+    autoplaySpeed: 3000,
+    centerPadding: "8px",
+    centerMode: true,
+    className: "center",
   };
 
-  const handleNextClick = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % positions.length);
-  };
-
-  const calculateTranslateX = () => {
+  const next = () => {
     if (sliderRef.current) {
-      const sliderWidth = sliderRef.current.clientWidth;
-      return -(currentIndex * (sliderWidth - 26));
+      sliderRef.current.slickNext();
     }
-    return 0;
   };
 
-  console.log();
-
+  const previous = () => {
+    if (sliderRef.current) {
+      sliderRef.current.slickPrev();
+    }
+  };
   return (
     <div className={styles.container}>
       <div className={styles.blockTitle}>Позиції допомоги</div>
-      <div
-        ref={sliderRef}
-        className={styles.slider}
-        style={{ transform: `translateX(${calculateTranslateX()}px)` }}
-      >
-        {positions.concat(positions).map((item, index) => (
+
+      <Slider ref={sliderRef} {...settings}>
+        {positions.map((item, index) => (
           <div className={styles.slideContainer} key={index}>
             <PositionCard
               name={item.name}
@@ -53,10 +58,10 @@ const Position: React.FC = () => {
             />
           </div>
         ))}
-      </div>
+      </Slider>
       <div className={styles.controlContainer}>
-        <img src={leftButton} alt="leftButton" onClick={handlePrevClick} />
-        <img src={rightButton} alt="rightButton" onClick={handleNextClick} />
+        <img src={leftButton} alt="leftButton" onClick={previous} />
+        <img src={rightButton} alt="rightButton" onClick={next} />
       </div>
     </div>
   );

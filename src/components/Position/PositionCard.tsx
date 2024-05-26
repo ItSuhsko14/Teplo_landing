@@ -1,8 +1,6 @@
 import React from "react";
 let styles = require("./position.module.css");
-import img from "./img1.png";
 
-// Визначаємо інтерфейс для пропсів компонента
 interface PositionCardProps {
   name: string;
   img: string;
@@ -10,7 +8,6 @@ interface PositionCardProps {
   button: string;
 }
 
-// Приймаємо пропси в компоненті і типізуємо їх за допомогою PositionCardProps
 const PositionCard: React.FC<PositionCardProps> = ({
   name,
   img,
