@@ -1,0 +1,46 @@
+.container {
+  padding: 0 16px;
+  background-color: rgba(49, 67, 86, 1);
+}
+.title {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 500;
+  color: #fffcea;
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.jar {
+}
+.desctiption {
+}
+.headline {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #dff3ff;
+}
+.text {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: white;
+}
+.cta {
+  width: 191px;
+  height: 48px;
+  border-radius: 30px;
+  background-color: #b0c8e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #061c33;
+}
+.progressBarContainer {
+}

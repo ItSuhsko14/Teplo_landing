@@ -10,6 +10,7 @@ import Telegram from "../components/Telegram/Telegram";
 import Detailed from "../components/Detailed/Detailed";
 import Position from "../components/Position/Position";
 import OurTeam from "../components/OurTeam/OurTeam";
+import Monobank from "../components/Monobank/Monobank";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -20,6 +21,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <Stat />
       <HowWeToWork />
       <Telegram />
+      <Monobank />
       <Detailed />
       <Position />
       <OurTeam />
