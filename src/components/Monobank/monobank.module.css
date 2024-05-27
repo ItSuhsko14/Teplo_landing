@@ -1,6 +1,24 @@
 .container {
-  padding: 0 16px;
+  padding: 48px 16px 0 16px;
   background-color: rgba(49, 67, 86, 1);
+  background-image: url("./background.png");
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  z-index: -2;
+}
+
+.pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./pattern.png");
+  background-repeat: repeat-y;
+  background-position: right;
+  z-index: -1;
 }
 .title {
   font-size: 24px;
@@ -14,20 +32,33 @@
   flex-direction: row;
 }
 .jar {
+  width: 188px;
+  height: 188px;
+  position: inherit;
+  top: 175px;
+  left: 0;
 }
-.desctiption {
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .headline {
+  margin-top: 49px;
   font-size: 18px;
   line-height: 24px;
   font-weight: 500;
   color: #dff3ff;
+  text-align: center;
+  margin-bottom: 24px;
 }
 .text {
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
   color: white;
+  text-align: center;
+  margin-bottom: 32px;
 }
 .cta {
   width: 191px;
@@ -37,10 +68,31 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: Montserrat;
   font-size: 16px;
+  font-weight: 600;
   line-height: 24px;
-  font-weight: 500;
-  color: #061c33;
+  text-align: left;
+  margin-bottom: 48px;
 }
 .progressBarContainer {
+}
+
+.progressBar {
+  border-radius: 30px;
+  height: 16px;
+  width: 400px;
+  background: linear-gradient(90deg, #faff1e 0%, #fe8900 49.75%, #00ab1b 100%);
+}
+
+.progressText {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  color: rgba(252, 252, 252, 1);
+  margin-bottom: 36px;
 }
