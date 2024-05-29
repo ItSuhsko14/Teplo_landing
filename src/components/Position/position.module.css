@@ -95,3 +95,36 @@
   margin: 0 auto;
   cursor: pointer;
 }
+
+.ctaContainer {
+  background-color: #0c3865;
+  background-image: url("./pattern.png");
+  background-repeat: repeat-x;
+  padding: 56px 16px;
+  margin-bottom: 56px;
+}
+
+.ctaText {
+  margin-bottom: 42px;
+  color: #e2f5ff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+}
+.filledbutton {
+  width: 398px;
+  height: 44px;
+  border: 0px solid white;
+  background: #b0c8e0;
+  color: #061c33;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+}

@@ -1,7 +1,8 @@
 .container {
-  padding: 48px 16px 0 16px;
+  padding: 48px 0 0 0;
   background-color: rgba(49, 67, 86, 1);
   background-image: url("./background.png");
+  background-position: left;
   position: relative;
   display: flex;
   align-items: center;
@@ -30,6 +31,8 @@
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  width: 100%;
+  padding-right: 16px;
 }
 .jar {
   width: 188px;
@@ -42,21 +45,26 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 191px;
 }
 .headline {
   margin-top: 49px;
   font-size: 18px;
+  font-weight: 600;
   line-height: 24px;
-  font-weight: 500;
+  text-align: center;
+
   color: #dff3ff;
   text-align: center;
   margin-bottom: 24px;
 }
 .text {
   font-size: 14px;
-  line-height: 20px;
   font-weight: 400;
-  color: white;
+  line-height: 20px;
+  text-align: center;
+  white-space: pre-line;
+  color: #fcfcfc;
   text-align: center;
   margin-bottom: 32px;
 }
@@ -79,10 +87,47 @@
 }
 
 .progressBar {
+  position: relative;
   border-radius: 30px;
   height: 16px;
   width: 400px;
+  background-color: #fffcea;
+  margin-bottom: 8px;
+}
+.progressBar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%; /* Ширина видимої частини прогрес-бару */
+  height: 100%;
   background: linear-gradient(90deg, #faff1e 0%, #fe8900 49.75%, #00ab1b 100%);
+  border-radius: 30px 0 0 30px;
+}
+
+.currentProgress {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #faff1e 0%, #fe8900 49.75%, #00ab1b 100%);
+  background-size: 100% 100%;
+}
+.progressMask {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70%; /* Ширина маски, яка закриває частину прогрес-бару */
+  height: 100%;
+  background: #e0e0e0; /* Колір фону контейнера, щоб перекривати градієнт */
+  border-radius: 0 30px 30px 0;
+}
+
+.SVG {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 30px;
 }
 
 .progressText {

@@ -13,12 +13,18 @@ const Monobank = () => {
         </div>
         <div className={styles.description}>
           <div className={styles.headline}>Наближаємо перемогу разом!</div>
-          <div className={styles.text}>Наша тижнева мета - 60 000 грн.</div>
+          <div className={styles.text}>Наша тижнева мета -{"\n"} 60 000 грн.</div>
           <div className={styles.cta}>Поповнити банку</div>
         </div>
       </div>
       <div className={styles.progressBarContainer}>
-        <div className={styles.progressBar}></div>
+        <div className={styles.progressBar}>
+          <div className={styles.currentProgress} />
+          {/* <div className={styles.progressMask}></div> */}
+          <svg className={styles.SVG} width="100%" height="100%" viewBox="0 0 100 30" preserveAspectRatio="none">
+            <path d="M0,30 H100 Q90,15 100,30 H0 Z" fill="#e0e0e0" />
+          </svg>
+        </div>
         <div className={styles.progressText}>
           <div className={styles.start}>0</div>
           <div className={styles.current}>20 000</div>
