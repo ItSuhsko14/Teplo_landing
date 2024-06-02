@@ -13,11 +13,11 @@ const Stat: React.FC<StatProps> = ({}) => {
       </div>
       <div className={`${styles.block} ${styles.background2}`}>
         <div className={styles.number}>23</div>
-        <div className={styles.name}>Військові підрозділи</div>
+        <div className={styles.name}>Військових підрозділів</div>
       </div>
       <div className={`${styles.block} ${styles.background3}`}>
         <div className={styles.number}>40+</div>
-        <div className={styles.name}>Постійні донатери</div>
+        <div className={styles.name}>Постійних донатерів</div>
       </div>
     </section>
   );
