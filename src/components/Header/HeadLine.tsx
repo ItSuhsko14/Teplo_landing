@@ -15,18 +15,16 @@ interface HeaderProps {}
 const HeadLine: React.FC = ({}) => {
   const [open, setOpen] = useState(false);
 
-  const toggleDrawer =
-    (open: boolean) => (event: React.KeyboardEvent | React.MouseEvent) => {
-      if (
-        event.type === "keydown" &&
-        ((event as React.KeyboardEvent).key === "Tab" ||
-          (event as React.KeyboardEvent).key === "Shift")
-      ) {
-        return;
-      }
+  const toggleDrawer = (open: boolean) => (event: React.KeyboardEvent | React.MouseEvent) => {
+    if (
+      event.type === "keydown" &&
+      ((event as React.KeyboardEvent).key === "Tab" || (event as React.KeyboardEvent).key === "Shift")
+    ) {
+      return;
+    }
 
-      setOpen(open);
-    };
+    setOpen(open);
+  };
 
   const menuList = [
     { name: "Про нас", link: "#about" },
@@ -44,25 +42,17 @@ const HeadLine: React.FC = ({}) => {
         <img src={logo} className={styles.logo} />
       </div>
       <div className={styles.buttoncontainer}>
-        <a
-          href="https://send.monobank.ua/jar/pAH2wwD8n"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="https://send.monobank.ua/jar/pAH2wwD8n" target="_blank" rel="noopener noreferrer">
           <button className={styles.button}>Підтримати</button>
         </a>
       </div>
       <div className={styles.menucontainer}>
-        <a
-          href="https://t.me/teplonaperedovu"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="https://t.me/teplonaperedovu" target="_blank" rel="noopener noreferrer">
           <img src={telegram} className={styles.telegram} />
         </a>
         <div className={styles.burgercontainer}>
-          <IconButton onClick={toggleDrawer(true)} color="inherit">
-            <MenuIcon />
+          <IconButton onClick={toggleDrawer(!open)} color="inherit">
+            {open ? <CloseIcon /> : <MenuIcon />}
           </IconButton>
           <Drawer
             anchor="right"
@@ -74,20 +64,12 @@ const HeadLine: React.FC = ({}) => {
             }}
           >
             <div className={styles.menuContainer}>
-              <IconButton
-                className={styles.closeButton}
-                onClick={toggleDrawer(false)}
-                color="inherit"
-              >
-                <CloseIcon />
+              <IconButton className={styles.closeButton} onClick={toggleDrawer(false)} color="inherit">
+                {open ? <CloseIcon /> : <MenuIcon />}
               </IconButton>
               <List>
                 {menuList.map((menu) => (
-                  <a
-                    href={menu.link}
-                    className={styles.menuItem}
-                    onClick={() => setOpen(false)}
-                  >
+                  <a href={menu.link} className={styles.menuItem} onClick={() => setOpen(false)}>
                     <ListItem key={menu.name} className={styles.menuItem}>
                       <ListItemText primary={menu.name} />
                     </ListItem>
