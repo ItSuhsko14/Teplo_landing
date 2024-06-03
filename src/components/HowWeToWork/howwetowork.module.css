@@ -1,128 +1,114 @@
 .container {
-    margin-left: 44px;
-    margin-right: 44px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  margin-left: 44px;
+  margin-right: 44px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .stepTitle {
-    font-size: 14px;
-    margin-bottom: 28px;
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  margin-bottom: 28px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
 }
 
 .img {
-
 }
 
 .stepsContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .stepsContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .stepItem {
-    margin-bottom: 56px;
-    position: relative;
-}
-
-.stepItem::before {
-    content: ''; 
-    position: absolute;
-    left: 50%;
-    top: 50%; 
-    width: 250px;
-    height: 245px;
-    background-color: #FFF7BF;
-    z-index: -1; /* Встановіть з-index, щоб прямокутник був на задньому плані */
-    border-radius: 30px;
-    transform: translate(-50%, -50%); 
+  margin-bottom: 56px;
+  position: relative;
 }
 
 .rightArrow {
-    position: relative;
+  position: relative;
 }
 
 .rightArrow::after {
-    content: url('rightArrow.png');; 
-    position: absolute; 
-    bottom: 0; 
-    left: 0; 
-    width: 16px; 
-    height: 80px; 
-    background-color: rgba(255, 255, 255, 0);
+  content: url("Arrow.png");
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 16px;
+  height: 80px;
+  background-color: rgba(255, 255, 255, 0);
 
-    background-size: cover; /* Розмір зображення */
-    background-repeat: no-repeat; /* Забороніть повторення зображення */
-    z-index: -1; 
-    transform: translate(-25px, 80px);
+  background-size: cover; /* Розмір зображення */
+  background-repeat: no-repeat; /* Забороніть повторення зображення */
+  z-index: -1;
+  transform: translate(-25px, 80px);
 }
 
 .leftArrow {
-    position: relative;
+  position: relative;
 }
 
 .leftArrow::after {
-    content: url('leftArrow.png');; 
-    position: absolute; 
-    bottom: 0; 
-    right: 0; 
-    width: 16px; 
-    height: 80px; 
-    background-color: rgba(255, 255, 255, 0);
-    background-size: cover;
-    background-repeat: no-repeat; 
-    z-index: -1; 
-    transform: translate(25px, 80px);
+  content: url("leftArrow.png");
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 16px;
+  height: 80px;
+  background-color: rgba(255, 255, 255, 0);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+  transform: translate(25px, 80px);
 }
 
 .ctaContainer {
-    background: url('./ctabackground.png');
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 224px;
+  background: url("./ctabackground.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 224px;
 }
 .filledbutton {
-    width: 398px;
-    height: 44px;
-    border: 0px solid white;
-    background: #B0C8E0;
-    color: #061C33;
-    font-family: "Montserrat", sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 16px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 30px;
-    margin-bottom: 24px;
+  width: 398px;
+  height: 44px;
+  border: 0px solid white;
+  background: #b0c8e0;
+  color: #061c33;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  margin-bottom: 24px;
 }
 
 .outlinedbutton {
-    width: 398px;
-    height: 44px;
-    border: 1px solid #B0C8E0;
-    background: rgba(255, 255, 255, 0);
-    color: #B0C8E0;
-    font-family: "Montserrat", sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 16px;
-    text-align: center;
-    border-radius: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 398px;
+  height: 44px;
+  border: 1px solid #b0c8e0;
+  background: rgba(255, 255, 255, 0);
+  color: #b0c8e0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  text-align: center;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
