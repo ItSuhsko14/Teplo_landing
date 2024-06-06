@@ -5,6 +5,7 @@ import img1 from "./img1.png";
 import img2 from "./img2.png";
 import img3 from "./img3.png";
 import img5 from "./img5.png";
+import arrow from "./Arrow.png";
 
 const HowWeToWork = () => {
   return (
@@ -17,24 +18,28 @@ const HowWeToWork = () => {
           </div>
           <div className={`${styles.stepItem} ${styles.leftArrow}`}>
             <img src={img1} alt="img1" />
+            <img src={arrow} alt="arrow" className={styles.arrow} />
           </div>
           <div className={styles.stepTitle}>
-            <b>Збираємо</b> кошти через донат
+            Збираємо кошти через<b> донат</b>
           </div>
           <div className={`${styles.stepItem} ${styles.rightArrow}`}>
             <img src={img2} alt="img1" />
+            <img src={arrow} alt="arrow" className={styles.arrow} />
           </div>
           <div className={styles.stepTitle}>
             <b>Закуповуємо та виготовляємо</b> необхідне
           </div>
           <div className={`${styles.stepItem} ${styles.leftArrow}`}>
-            <img src={img3} alt="img1" />
+            <img src={img3} className={styles.img} alt="img1" />
+            <img src={arrow} alt="arrow" className={styles.arrow} />
           </div>
           <div className={styles.stepTitle}>
             <b>Передаємо</b> допомогоу військовим
           </div>
           <div className={`${styles.stepItem} ${styles.rightArrow}`}>
             <img src={img5} alt="img1" />
+            <img src={arrow} alt="arrow" className={styles.arrow} />
           </div>
           <div className={styles.stepTitle}>
             Обов'язковий <b>звіт</b>

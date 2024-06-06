@@ -17,7 +17,7 @@ interface Donator {
 const DonatorsData: Donator[] = [
   { id: "0", text: "Світлана  К. /n країнсько-німецька гімназія №53" },
   { id: "1", text: "Нова Пошта" },
-  { id: "2", text: "Альона та Світлана топ косметікс Юкрейн" },
+  { id: "2", text: '"Альона та Світлана "топ косметікс Юкрейн"' },
   { id: "3", text: "Євген П. /n Топ донатер" },
 ];
 const Donators = () => {
@@ -29,6 +29,7 @@ const Donators = () => {
           <CardDonator key={item.id} text={item.text} img={donatorImage[index].original} />
         ))}
       </div>
+      <div className={styles.ctaText}>Впишіть своє ім'я в історію нашої перемоги!</div>
       <a href="https://t.me/teplonaperedovu" target="_blank" rel="noopener noreferrer">
         <div className={styles.cta}>Стати партнером</div>
       </a>

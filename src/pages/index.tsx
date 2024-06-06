@@ -13,6 +13,7 @@ import OurTeam from "../components/OurTeam/OurTeam";
 import Monobank from "../components/Monobank/Monobank";
 import Donators from "../components/Donators/Donators";
 import Contacts from "../components/Contacts/Contacts";
+import Footer from "../components/Footer/Footer";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -29,6 +30,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <OurTeam />
       <Donators />
       <Contacts />
+      <Footer />
     </main>
   );
 };
