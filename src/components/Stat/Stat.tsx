@@ -6,7 +6,7 @@ interface StatProps {}
 const Stat: React.FC<StatProps> = ({}) => {
   return (
     <section className={styles.container} id="stat">
-      <div className="blockTitle">Наші досягнення</div>
+      <div className={styles.blockTitle}>Наші досягнення</div>
       <div className={`${styles.block} ${styles.background1}`}>
         <div className={styles.number}>300+</div>
         <div className={styles.name}>Закритих запитів</div>

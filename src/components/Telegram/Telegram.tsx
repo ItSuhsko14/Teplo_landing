@@ -13,16 +13,10 @@ const Telegram: React.FC = () => {
     <div className={styles.container} id="telegram">
       <div className="title darkColor">Наш телеграм</div>
 
-      <div className={styles.text}>
-        Будь в курсі наших останніх новин - підписуйся на телеграм канал!
-      </div>
+      <div className={styles.text}>Будь в курсі наших останніх новин - підписуйся на телеграм канал!</div>
       <div className={styles.main}>
         <div className={styles.mainTitle}>
-          <a
-            href="https://t.me/teplonaperedovu"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://t.me/teplonaperedovu" target="_blank" rel="noopener noreferrer">
             -= ТЕПЛО НА ПЕРЕДОВУ =-
           </a>
         </div>
@@ -34,11 +28,7 @@ const Telegram: React.FC = () => {
             <Post text={post.text} />
           ))} */}
         </div>
-        <a
-          href="https://t.me/teplonaperedovu"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="https://t.me/teplonaperedovu" target="_blank" rel="noopener noreferrer">
           <div className={styles.cta}>Підписатись</div>
         </a>
       </div>

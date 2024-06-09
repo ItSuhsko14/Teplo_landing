@@ -3,6 +3,7 @@
   position: relative;
   width: 100%;
   margin-bottom: 56px;
+  margin-top: 40px;
 }
 
 .slider {
@@ -43,7 +44,7 @@
   font-weight: 600;
   line-height: 32px;
   text-align: center;
-  margin: 0 auto 32px auto;
+  margin: 60px auto 32px auto;
 }
 
 .cardTitle {
