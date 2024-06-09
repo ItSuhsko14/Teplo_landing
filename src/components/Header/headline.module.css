@@ -9,6 +9,8 @@
   border: 0px solid black;
   background: rgba(252, 252, 252, 0.7);
   z-index: 9999;
+  overflow: hidden;
+  max-width: 480px;
 }
 
 .menucontainer {
