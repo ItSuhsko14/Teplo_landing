@@ -53,6 +53,12 @@
   justify-content: center;
   align-items: center;
   border-radius: 30px;
+  transition: all 0.5s ease;
+}
+
+.filledbutton:active {
+  border-image-source: linear-gradient(87deg, #3076be 1.5%, #011121 99.52%);
+  background: linear-gradient(275.82deg, #3177be 7.7%, #011121 72.63%);
 }
 
 .outlinedbutton {
@@ -67,4 +73,12 @@
   line-height: 16px;
   text-align: center;
   border-radius: 30px;
+  transition: all 0.5s ease;
+}
+
+.outlinedbutton:active {
+  border: 2px solid;
+
+  border-image-source: linear-gradient(275.82deg, #3177be 7.7%, #011121 72.63%);
+  color: linear-gradient(275.82deg, #3177be 7.7%, #011121 72.63%);
 }
