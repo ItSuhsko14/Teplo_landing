@@ -135,3 +135,7 @@ body {
 .customImageGallery .image-gallery-slide-wrapper .image-gallery-slide.center {
   transform: scale(1);
 }
+
+.slick-slider {
+  margin: 0 !important;
+}
