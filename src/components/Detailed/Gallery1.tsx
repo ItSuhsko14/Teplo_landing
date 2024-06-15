@@ -38,6 +38,7 @@ const Gallery1 = () => {
       autoplaySpeed: 2000,
       cssEase: "linear",
       initialSlide: initialSlide,
+      arrows: false,
     };
     return (
       <div>
