@@ -29,6 +29,7 @@
   color: #000000;
   margin-bottom: 40px;
   padding: 0 16px 0 16px;
+  text-align: justify;
 }
 
 .first-description {
@@ -77,5 +78,4 @@
   flex-direction: column;
 
   row-gap: 24px;
-  
 }
