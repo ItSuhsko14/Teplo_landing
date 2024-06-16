@@ -11,7 +11,7 @@ const Telegram: React.FC = () => {
 
   return (
     <div className={styles.container} id="telegram">
-      <div className="title darkColor">Наш телеграм</div>
+      <div className={styles.blockTitle}>Наш телеграм</div>
 
       <div className={styles.text}>Будь в курсі наших останніх новин - підписуйся на телеграм канал!</div>
       <div className={styles.main}>

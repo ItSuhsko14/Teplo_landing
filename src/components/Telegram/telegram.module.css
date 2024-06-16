@@ -1,8 +1,16 @@
 .container {
-  margin-top: 86px;
+  margin-top: 48px;
   padding-left: 16px;
   padding-right: 16px;
   margin-bottom: 54px;
+}
+
+.blockTitle {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: center;
+  margin: 48px auto 56px auto;
 }
 
 .text {
@@ -36,6 +44,7 @@
   border-radius: 24px 24px 0 0;
   padding: 12px 0 10px 0;
   text-decoration: none;
+  margin-top: 86px;
 }
 
 .mainTitle a {

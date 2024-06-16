@@ -39,6 +39,18 @@ const Gallery1 = () => {
       cssEase: "linear",
       arrows: false,
     };
+
+    const settings2 = {
+      dots: false,
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      speed: 2000,
+      autoplaySpeed: 2000,
+      cssEase: "linear",
+      arrows: false,
+    };
     return (
       <div>
         <Slider ref={sliderRef} {...settings}>
