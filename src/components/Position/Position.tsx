@@ -11,7 +11,7 @@ import "./slider.css";
 import CTA from "./CTA";
 
 const Position: React.FC = () => {
-  let sliderRef = useRef(null);
+  let sliderRef = useRef<Slider | null>(null);
 
   const images = [
     { original: require("./img1.png").default },
@@ -50,7 +50,7 @@ const Position: React.FC = () => {
         <div className={styles.blockTitle}>Позиції допомоги</div>
 
         <Slider ref={sliderRef} {...settings}>
-          {positions.map((item, index) => (
+          {positions.map((item: { name: string; button: string; text: string }, index: number) => (
             <div className={styles.slideContainer} key={index}>
               <PositionCard
                 name={item.name}
