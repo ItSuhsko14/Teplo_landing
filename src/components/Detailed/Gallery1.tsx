@@ -27,7 +27,7 @@ const Gallery1 = () => {
     { original: require("./gal1.png").default },
   ];
 
-  const GalleryRow = ({ initialSlide, photos }) => {
+  const GalleryRow = ({ initialSlide: number, photos }: { initialSlide: number; photos: { original: string }[] }) => {
     const settings = {
       dots: false,
       infinite: true,
@@ -37,7 +37,6 @@ const Gallery1 = () => {
       speed: 2000,
       autoplaySpeed: 2000,
       cssEase: "linear",
-      initialSlide: initialSlide,
       arrows: false,
     };
     return (
