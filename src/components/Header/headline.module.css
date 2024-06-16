@@ -89,3 +89,18 @@
   align-items: center;
   border-radius: 20px;
 }
+
+.menuItem {
+  color: inherit; /* Наслідує колір від батьківського елемента */
+  text-decoration: none;
+}
+
+.menuItem:visited {
+  color: inherit; /* Зберігає колір як у звичайного посилання */
+}
+
+.menuItem:hover,
+.menuItem:active {
+  color: inherit; /* Зберігає колір як у звичайного посилання */
+  text-decoration: none; /* Прибирає підкреслення при наведенні і активному стані */
+}
