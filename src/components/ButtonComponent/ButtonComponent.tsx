@@ -5,12 +5,12 @@ import { Link } from "gatsby";
 
 // Базовий стиль кнопки
 const ButtonBase = styled(Link)`
-  width: 191px;
   height: 36px;
+  width: 100%;
   font-family: "Montserrat", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
-  line-height: 16px;
+  line-height: 24px;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -20,6 +20,9 @@ const ButtonBase = styled(Link)`
   text-decoration: none;
   cursor: pointer;
   outline: none;
+  padding: 12px;
+  text-wrap: nowrap;
+  flex: 1;
 
   /* Прибираємо стандартне виділення */
   &:focus {
@@ -33,6 +36,12 @@ const ButtonBase = styled(Link)`
       border: 0px solid white;
       background: hsl(210, 79%, 22%);
       color: white;
+
+      &:hover,
+      &:active,
+      &:visited {
+        color: white;
+      }
 
       &:active {
         border-image-source: linear-gradient(87deg, #3076be 1.5%, #011121 99.52%);

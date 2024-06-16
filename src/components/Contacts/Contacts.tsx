@@ -8,7 +8,7 @@ import gmail from "./gmail.png";
 const Contacts = () => {
   return (
     <>
-      <div className={styles.container}>
+      <div className={styles.container} id="contact">
         <div className={styles.text}>
           Будьте з нами на зв’язку! Приєднуйтесь до наших соціальних мереж, спостерігайте за життям нашого
           волонтерського руху та ставайте його частиною!

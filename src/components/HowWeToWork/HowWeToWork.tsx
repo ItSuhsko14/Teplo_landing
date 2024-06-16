@@ -9,7 +9,7 @@ import arrow from "./Arrow.png";
 
 const HowWeToWork = () => {
   return (
-    <div>
+    <>
       <div className={styles.container} id="howwetowork">
         <div className="title darkColor">Конвертуємо донати в перемогу</div>
         <div className={styles.stepsContainer}>
@@ -50,7 +50,7 @@ const HowWeToWork = () => {
         </div>
       </div>
       <CTA />
-    </div>
+    </>
   );
 };
 

@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import TeamCard from "./TeamCard";
+import Button from "../ButtonComponent/ButtonComponent";
 import team from "./team.json";
 let styles = require("./ourTeam.module.css");
 import leftButton from "./buttonLeft.png";
@@ -10,7 +11,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "./slider.css";
 
 const OurTeam: React.FC = () => {
-  let sliderRef = useRef(null);
+  let sliderRef = useRef<Slider | null>(null);
 
   const images = [
     { original: require("./img1.png").default },
@@ -47,15 +48,13 @@ const OurTeam: React.FC = () => {
     <div className={styles.container} id="team">
       <div className={styles.blockTitle}>Наша команда</div>
       <div className={styles.mainText}>
-        Lorem ipsum dolor sit amet consectetur. In quam ac cras pretium
-        lobortis. Aliquet lacus morbi ut enim. Lorem ipsum dolor sit amet
-        consectetur. In quam ac cras pretium lobortis. Lorem ipsum dolor sit
-        amet consectetur. In quam ac cras pretium lobortis. Aliquet lacus morbi
-        ut enim.
+        Lorem ipsum dolor sit amet consectetur. In quam ac cras pretium lobortis. Aliquet lacus morbi ut enim. Lorem
+        ipsum dolor sit amet consectetur. In quam ac cras pretium lobortis. Lorem ipsum dolor sit amet consectetur. In
+        quam ac cras pretium lobortis. Aliquet lacus morbi ut enim.
       </div>
 
       <Slider ref={sliderRef} {...settings}>
-        {team.map((item, index) => (
+        {team.map((item: { name: string; button: string; text: string }, index: number) => (
           <div className={styles.slideContainer} key={index}>
             <TeamCard
               name={item.name}
@@ -69,6 +68,12 @@ const OurTeam: React.FC = () => {
       <div className={styles.controlContainer}>
         <img src={leftButton} alt="leftButton" onClick={previous} />
         <img src={rightButton} alt="rightButton" onClick={next} />
+      </div>
+      <div className={styles.CTA}>Приєднуйтесь до нашого волонтерського руху!</div>
+      <div className={styles.buttonContainer}>
+        <Button to="" variant="filled">
+          Стати волонтером
+        </Button>
       </div>
     </div>
   );

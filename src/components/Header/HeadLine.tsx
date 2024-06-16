@@ -26,6 +26,24 @@ const HeadLine: React.FC = ({}) => {
     setOpen(open);
   };
 
+  const handleSmoothScroll = (event: React.MouseEvent, link: string) => {
+    event.preventDefault();
+    setOpen(false); // Закриваємо Drawer після кліку на пункт меню
+    const targetId = link.slice(1); // Видаляємо "#" з посилання
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      const offset = 0; // Відступ у пікселях
+      const elementPosition = targetElement.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
+
   const menuList = [
     { name: "Про нас", link: "#about" },
     { name: "Наші досягнення", link: "#stat" },
@@ -34,6 +52,8 @@ const HeadLine: React.FC = ({}) => {
     { name: "Детальніше про тепло", link: "#detailed" },
     { name: "Позиції допомоги", link: "#position" },
     { name: "Наша команда", link: "#team" },
+    { name: "Топ донатери", link: "#donators" },
+    { name: "Наші контакти", link: "#contact" },
   ];
 
   return (
@@ -69,7 +89,7 @@ const HeadLine: React.FC = ({}) => {
               </IconButton>
               <List>
                 {menuList.map((menu) => (
-                  <a href={menu.link} className={styles.menuItem} onClick={() => setOpen(false)}>
+                  <a href={menu.link} className={styles.menuItem} onClick={() => handleSmoothScroll(event, menu.link)}>
                     <ListItem key={menu.name} className={styles.menuItem}>
                       <ListItemText primary={menu.name} />
                     </ListItem>

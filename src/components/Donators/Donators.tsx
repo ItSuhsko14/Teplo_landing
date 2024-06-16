@@ -1,6 +1,7 @@
 import React from "react";
 let styles = require("./donators.module.css");
 import CardDonator from "./CardDonator";
+import Button from "../ButtonComponent/ButtonComponent";
 
 const donatorImage = [
   { original: require("./img1.png").default },
@@ -22,7 +23,7 @@ const DonatorsData: Donator[] = [
 ];
 const Donators = () => {
   return (
-    <div className={styles.donators}>
+    <div className={styles.donators} id="donators">
       <div className={styles.title}>Топ донатери та бізнес, що допомагає</div>
       <div className={styles.cardsContainer}>
         {DonatorsData.map((item, index) => (
@@ -30,9 +31,9 @@ const Donators = () => {
         ))}
       </div>
       <div className={styles.ctaText}>Впишіть своє ім'я в історію нашої перемоги!</div>
-      <a href="https://t.me/teplonaperedovu" target="_blank" rel="noopener noreferrer">
-        <div className={styles.cta}>Стати партнером</div>
-      </a>
+      <Button to="https://t.me/teplonaperedovu" variant="filled">
+        Стати партнером
+      </Button>
     </div>
   );
 };
