@@ -28,7 +28,7 @@ const Position: React.FC = () => {
     arrows: false,
     autoplay: false,
     autoplaySpeed: 2000,
-    centerPadding: "8px",
+    centerPadding: "32px",
     centerMode: true,
     className: "center",
   };
