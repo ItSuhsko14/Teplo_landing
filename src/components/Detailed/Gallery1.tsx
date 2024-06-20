@@ -27,33 +27,18 @@ const Gallery1 = () => {
     { original: require("./gal1.png").default },
   ];
 
-  const GalleryRow = ({ initialSlide: number, photos }: { initialSlide: number; photos: { original: string }[] }) => {
-    const settings = {
-      dots: false,
-      infinite: true,
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      autoplay: true,
-      speed: 2000,
-      autoplaySpeed: 2000,
-      cssEase: "linear",
-      arrows: false,
-    };
-
-    const settings2 = {
-      dots: false,
-      infinite: true,
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      autoplay: true,
-      speed: 2000,
-      autoplaySpeed: 2000,
-      cssEase: "linear",
-      arrows: false,
-    };
+  const GalleryRow = ({
+    photos,
+    settings,
+    rtl = false,
+  }: {
+    photos: { original: string }[];
+    settings: any;
+    rtl?: boolean;
+  }) => {
     return (
       <div>
-        <Slider ref={sliderRef} {...settings}>
+        <Slider ref={sliderRef} {...settings} rtl={rtl}>
           {photos.map((item, index) => (
             <div key={index}>
               <img src={item.original} alt={`img-${index}`} />
@@ -64,11 +49,35 @@ const Gallery1 = () => {
     );
   };
 
+  const settings = {
+    dots: false,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+    arrows: false,
+  };
+
+  const settings2 = {
+    dots: false,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+    arrows: false,
+  };
+
   return (
     <div className={styles.galleryContainer}>
-      <GalleryRow initialSlide={0} photos={images} />
-      <GalleryRow initialSlide={1} photos={images2} />
-      <GalleryRow initialSlide={2} photos={images} />
+      <GalleryRow photos={images} settings={settings} />
+      <GalleryRow photos={images2} settings={settings} rtl={true} />
+      <GalleryRow photos={images} settings={settings} />
     </div>
   );
 };
