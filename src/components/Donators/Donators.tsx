@@ -5,7 +5,6 @@ import Button from "../ButtonComponent/ButtonComponent";
 
 const donatorImage = [
   { original: require("./img1.png").default },
-  { original: require("./img2.png").default },
   { original: require("./img3.png").default },
   { original: require("./img4.png").default },
 ];
@@ -17,7 +16,6 @@ interface Donator {
 
 const DonatorsData: Donator[] = [
   { id: "0", text: "Світлана  К. /n країнсько-німецька гімназія №53" },
-  { id: "1", text: "Нова Пошта" },
   { id: "2", text: '"Альона та Світлана "топ косметікс Юкрейн"' },
   { id: "3", text: "Євген П. /n Топ донатер" },
 ];
