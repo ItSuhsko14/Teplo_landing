@@ -18,13 +18,13 @@ const Gallery1 = () => {
   ];
 
   const images2 = [
-    { original: require("./gal3.png").default },
-    { original: require("./gal4.png").default },
-    { original: require("./gal5.png").default },
-    { original: require("./gal6.png").default },
-    { original: require("./gal7.png").default },
-    { original: require("./gal1.png").default },
-    { original: require("./gal1.png").default },
+    { original: require("./gal11.jpg").default },
+    { original: require("./gal12.jpg").default },
+    { original: require("./gal13.jpg").default },
+    { original: require("./gal14.jpg").default },
+    { original: require("./gal15.jpg").default },
+    { original: require("./gal16.jpg").default },
+    { original: require("./gal17.jpg").default },
   ];
 
   const GalleryRow = ({
@@ -41,7 +41,7 @@ const Gallery1 = () => {
         <Slider ref={sliderRef} {...settings} rtl={rtl}>
           {photos.map((item, index) => (
             <div key={index}>
-              <img src={item.original} alt={`img-${index}`} />
+              <img className={styles.galleryImage} src={item.original} alt={`img-${index}`} />
             </div>
           ))}
         </Slider>
