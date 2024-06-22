@@ -14,9 +14,13 @@ const Position: React.FC = () => {
   let sliderRef = useRef<Slider | null>(null);
 
   const images = [
-    { original: require("./img1.png").default },
-    { original: require("./img2.png").default },
-    { original: require("./img3.png").default },
+    { original: require("./noshi.png").default },
+    { original: require("./covers.png").default },
+    { original: require("./coats.png").default },
+    { original: require("./spalniki.png").default },
+    { original: require("./gas.png").default },
+    { original: require("./lopati.png").default },
+    { original: require("./svichki.png").default },
   ];
 
   var settings = {
