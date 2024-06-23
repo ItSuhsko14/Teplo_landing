@@ -45,15 +45,15 @@ const HeadLine: React.FC = ({}) => {
   };
 
   const menuList = [
-    { name: "Про нас", link: "#about" },
+    { name: "Про проєкт", link: "#about" },
     { name: "Наші досягнення", link: "#stat" },
     { name: "Конвертуємо донати", link: "#howwetowork" },
-    { name: "Телеграм канал", link: "#telegram" },
-    { name: "Детальніше про тепло", link: "#detailed" },
+    { name: "Наш телеграм", link: "#telegram" },
+    { name: `Детальніше про "Тепло на передову"`, link: "#detailed" },
     { name: "Позиції допомоги", link: "#position" },
     { name: "Наша команда", link: "#team" },
-    { name: "Топ донатери", link: "#donators" },
-    { name: "Наші контакти", link: "#contact" },
+    { name: "Топ донатери та бізнес, що допомагає", link: "#donators" },
+    { name: "Контакти", link: "#contact" },
   ];
 
   return (
@@ -66,7 +66,7 @@ const HeadLine: React.FC = ({}) => {
           <button className={styles.button}>Підтримати</button>
         </a>
       </div>
-      <div className={styles.menucontainer}>
+      <div className={styles.menuButtons}>
         <a href="https://t.me/teplonaperedovu" target="_blank" rel="noopener noreferrer">
           <img src={telegram} className={styles.telegram} />
         </a>
@@ -74,19 +74,8 @@ const HeadLine: React.FC = ({}) => {
           <IconButton onClick={toggleDrawer(!open)} color="inherit">
             {open ? <CloseIcon /> : <MenuIcon />}
           </IconButton>
-          <Drawer
-            anchor="right"
-            open={open}
-            onClose={toggleDrawer(false)}
-            style={{
-              backgroundColor: "transparent",
-              width: "100%",
-            }}
-          >
-            <div className={styles.menuContainer}>
-              <IconButton className={styles.closeButton} onClick={toggleDrawer(false)} color="inherit">
-                {open ? <CloseIcon /> : <MenuIcon />}
-              </IconButton>
+          <Drawer anchor="right" open={open} onClose={toggleDrawer(false)} classes={{ paper: styles.menuContainer }}>
+            <div className={styles.listContainer}>
               <List>
                 {menuList.map((menu) => (
                   <a href={menu.link} className={styles.menuItem} onClick={() => handleSmoothScroll(event, menu.link)}>
