@@ -14,10 +14,18 @@ const Contacts = () => {
           волонтерського руху та ставайте його частиною!
         </div>
         <div className={styles.buttonsContainer}>
-          <img src={instagram} alt="instagram" className={styles.button} />
-          <img src={telegram} alt="telegram" className={styles.button} />
-          <img src={fb_messenger} alt="fb_messenger" className={styles.button} />
-          <img src={gmail} alt="gmail" className={styles.button} />
+          <a href="https://www.instagram.com/artem_ruban84/" target="_blank" rel="noopener noreferrer">
+            <img src={instagram} alt="instagram" className={styles.socIcon} />
+          </a>
+          <a href="https://t.me/teplonaperedovu" target="_blank" rel="noopener noreferrer">
+            <img src={telegram} alt="telegram" className={styles.socIcon} />
+          </a>
+          <a href="https://m.me/artem.ruban.3" target="_blank" rel="noopener noreferrer">
+            <img src={fb_messenger} alt="fb_messenger" className={styles.button} />
+          </a>
+          <a href="mailto:teplonaperedovu@gmail.com">
+            <img src={gmail} alt="gmail" className={styles.button} />
+          </a>
         </div>
       </div>
       <div className={styles.cta}>
