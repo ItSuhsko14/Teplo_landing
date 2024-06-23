@@ -11,13 +11,18 @@ const Footer = () => {
       <img src={logo} alt="logo" className={styles.logo} />
       <div className={styles.cta}>Зробити донат</div>
       <div className={styles.ancors}>
-        <div className={styles.email}>Email: teplonaperedovu@gmail.com</div>
+        <div className={styles.email}>teplonaperedovu@gmail.com</div>
         <div className={styles.socialLinks}>
-          <div className={styles.socTitle}>Ми в соціальних мережах</div>
           <div className={styles.socIcons}>
-            <img src={instagram} alt="instagram" className={styles.socIcon} />
-            <img src={telegram} alt="telegram" className={styles.socIcon} />
-            <img src={facebook} alt="facebook" className={styles.socIcon} />
+            <a href="https://www.instagram.com/artem_ruban84/" target="_blank" rel="noopener noreferrer">
+              <img src={instagram} alt="instagram" className={styles.socIcon} />
+            </a>
+            <a href="https://t.me/teplonaperedovu" target="_blank" rel="noopener noreferrer">
+              <img src={telegram} alt="telegram" className={styles.socIcon} />
+            </a>
+            <a href="https://www.facebook.com/artem.ruban.3" target="_blank" rel="noopener noreferrer">
+              <img src={facebook} alt="facebook" className={styles.socIcon} />
+            </a>
           </div>
         </div>
       </div>
