@@ -7,14 +7,17 @@ let styles = require("./detailed.module.css");
 const Gallery1 = () => {
   let sliderRef = useRef(null);
 
-  const images = [
-    { original: require("./gal1.png").default },
-    { original: require("./gal2.png").default },
-    { original: require("./gal3.png").default },
-    { original: require("./gal4.png").default },
-    { original: require("./gal5.png").default },
-    { original: require("./gal6.png").default },
-    { original: require("./gal7.png").default },
+  const images1 = [
+    { original: require("./sh01.jpg").default },
+    { original: require("./sh02.jpg").default },
+    { original: require("./sh03.jpg").default },
+    { original: require("./sh04.jpg").default },
+    { original: require("./sh05.jpg").default },
+    { original: require("./sh06.jpg").default },
+    { original: require("./sh07.jpg").default },
+    { original: require("./sh08.jpg").default },
+    { original: require("./sh09.jpg").default },
+    { original: require("./sh10.jpg").default },
   ];
 
   const images2 = [
@@ -25,6 +28,15 @@ const Gallery1 = () => {
     { original: require("./gal15.jpg").default },
     { original: require("./gal16.jpg").default },
     { original: require("./gal17.jpg").default },
+  ];
+
+  const images3 = [
+    { original: require("./img11.jpg").default },
+    { original: require("./img12.jpg").default },
+    { original: require("./img13.jpg").default },
+    { original: require("./img14.jpg").default },
+    { original: require("./img15.jpg").default },
+    { original: require("./img16.jpg").default },
   ];
 
   const GalleryRow = ({
@@ -75,9 +87,9 @@ const Gallery1 = () => {
 
   return (
     <div className={styles.galleryContainer}>
-      <GalleryRow photos={images} settings={settings} />
+      <GalleryRow photos={images1} settings={settings} />
       <GalleryRow photos={images2} settings={settings} rtl={true} />
-      <GalleryRow photos={images} settings={settings} />
+      <GalleryRow photos={images3} settings={settings} />
     </div>
   );
 };

@@ -14,9 +14,15 @@ const OurTeam: React.FC = () => {
   let sliderRef = useRef<Slider | null>(null);
 
   const images = [
-    { original: require("./img1.png").default },
-    { original: require("./img1.png").default },
-    { original: require("./img1.png").default },
+    { original: require("./img01.jpg").default },
+    { original: require("./img02.jpg").default },
+    { original: require("./img03.jpg").default },
+    { original: require("./img04.jpg").default },
+    { original: require("./img05.jpg").default },
+    { original: require("./img06.jpg").default },
+    { original: require("./img07.png").default },
+    { original: require("./img08.jpg").default },
+    { original: require("./img09.jpg").default },
   ];
 
   var settings = {
@@ -48,9 +54,9 @@ const OurTeam: React.FC = () => {
     <div className={styles.container} id="team">
       <div className={styles.blockTitle}>Наша команда</div>
       <div className={styles.mainText}>
-        Lorem ipsum dolor sit amet consectetur. In quam ac cras pretium lobortis. Aliquet lacus morbi ut enim. Lorem
-        ipsum dolor sit amet consectetur. In quam ac cras pretium lobortis. Lorem ipsum dolor sit amet consectetur. In
-        quam ac cras pretium lobortis. Aliquet lacus morbi ut enim.
+        Наша команда - це люди, які хочуть робити свій вклад і не залишатися осторонь. Вони возять, ш'ють, виготовляють,
+        готують, вкладають власні гроші, роблять все, щоб наблизити нашу перемогу. Ти можеш приєднатися до нас своїм
+        репостом, часом або внеском.
       </div>
 
       <Slider ref={sliderRef} {...settings}>

@@ -78,9 +78,14 @@ const HeadLine: React.FC = ({}) => {
             <div className={styles.listContainer}>
               <List>
                 {menuList.map((menu) => (
-                  <a href={menu.link} className={styles.menuItem} onClick={() => handleSmoothScroll(event, menu.link)}>
-                    <ListItem key={menu.name} className={styles.menuItem}>
-                      <ListItemText primary={menu.name} />
+                  <a
+                    href={menu.link}
+                    key={menu.name}
+                    className={styles.menuItem}
+                    onClick={(event) => handleSmoothScroll(event, menu.link)}
+                  >
+                    <ListItem className={styles.menuItem}>
+                      <ListItemText key={menu.name} primary={menu.name} />
                     </ListItem>
                   </a>
                 ))}

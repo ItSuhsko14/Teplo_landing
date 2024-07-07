@@ -5,34 +5,50 @@ import Gallery1 from "./Gallery1";
 import "react-image-gallery/styles/css/image-gallery.css";
 
 let rightArrow = require("./buttonLeft.png");
+
 const images = [
   {
-    original: require("./img1.png").default,
-    thumbnail: "https://picsum.photos/id/1018/250/150/",
+    original: require("./img01.jpg").default,
     originalHeight: 258,
     originalWidth: 342,
   },
   {
-    original: require("./img2.png").default,
-    thumbnail: "https://picsum.photos/id/1015/250/150/",
+    original: require("./img02.jpg").default,
     originalHeight: 258,
     originalWidth: 342,
   },
   {
-    original: require("./img3.png").default,
-    thumbnail: "https://picsum.photos/id/1019/250/150/",
+    original: require("./img03.jpg").default,
     originalHeight: 258,
     originalWidth: 342,
   },
   {
-    original: require("./img4.png").default,
-    thumbnail: "https://picsum.photos/id/1019/250/150/",
+    original: require("./img04.jpg").default,
     originalHeight: 258,
     originalWidth: 342,
   },
   {
-    original: require("./img5.png").default,
-    thumbnail: "https://picsum.photos/id/1019/250/150/",
+    original: require("./img05.jpg").default,
+    originalHeight: 258,
+    originalWidth: 342,
+  },
+  {
+    original: require("./img06.jpg").default,
+    originalHeight: 258,
+    originalWidth: 342,
+  },
+  {
+    original: require("./img07.jpg").default,
+    originalHeight: 258,
+    originalWidth: 342,
+  },
+  {
+    original: require("./img08.jpg").default,
+    originalHeight: 258,
+    originalWidth: 342,
+  },
+  {
+    original: require("./img09.jpg").default,
     originalHeight: 258,
     originalWidth: 342,
   },
@@ -57,10 +73,11 @@ const Detailed: React.FC<DetailedProps> = ({}) => {
           <p>"Тепло на передову"</p>
         </div>
         <div className={`${styles.description} ${styles.firstDescription}`}>
-          Проєкт "Тепло на передову" виник на початку повномаштабного вторгнення і спрямований на забезпечення
-          захисників всім необхідним. Почавши з постачання буржуєк на фронт, він швидко розширився і охопив значно
-          більший перелік позицій допомоги, включаючи кавери, м'які ноші, плащі-палатки, газові горілки та балони,
-          окопні свічки та інше необхідне обладнання.
+          Проєкт "Тепло на передову" був заснований Артемом Рубаном у перші тижні повномасштабного вторгнення. Він виник
+          з метою надання необхідної підтримки захисникам у складний період. Почавши з постачання буржуйок на фронт,
+          проєкт швидко розширився, охопивши широкий спектр необхідного обладнання. Сьогодні "Тепло на передову"
+          постачає військовим кавери, м'які ноші, плащі-палатки, газові горілки та балони, а також інше обладнання,
+          необхідне для комфорту і безпеки на передовій.
         </div>
       </section>
       <div className={styles.photoSlider}>
@@ -78,10 +95,15 @@ const Detailed: React.FC<DetailedProps> = ({}) => {
       </div>
       <section className={styles.container}>
         <div className={`${styles.description} ${styles.secondDescription}`}>
-          Проєкт "Тепло на передову" був створений як відповідь на різкі потреби фронту під час військових дій. Він
-          постачає захисникам широкий спектр необхідного обладнання, починаючи від каверів і м'яких нош до
-          плащів-палаток і газових горілок. Цей проєкт є важливим елементом підтримки бойових дій і допомагає
-          забезпечити комфорт і безпеку військовим у важкі часи.
+          У пошуках способів допомогти, Артем Рубан відвідав багато волонтерських центрів, проте через хаос і
+          невизначеність на самому початку конфлікту вирішив самостійно організувати допомогу. Початково основним
+          напрямком стали буржуйки, які забезпечували тепло та зручність в умовах передової. Протягом часу були створені
+          різні модифікації, що враховували специфіку експлуатації і побажання бійців, але з появою дронів їх
+          використання стало небезпечним, і фокус змінився на доставку іншого необхідного обладнання, такого як газові
+          пальники, балони та окопні свічки. З розвитком проєкту збільшувалась кількість позицій допомоги: з'явились
+          м'які ноші, кавери для шоломів, плащі-палатки, лопати та спальні мішки. Разом із зростанням чисельності
+          команди і кількістю постійних донатерів, проєкт став працювати на постійній основі, щотижнево забезпечуючи
+          військових актуальною та необхідною допомогою.
         </div>
       </section>
       <Gallery1 />
