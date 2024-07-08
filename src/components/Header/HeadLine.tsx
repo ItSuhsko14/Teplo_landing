@@ -74,7 +74,7 @@ const HeadLine: React.FC = ({}) => {
         </a>
         <div className={styles.burgercontainer}>
           <IconButton onClick={toggleDrawer(!open)} color="inherit">
-            {open ? <CloseIcon /> : <MenuIcon />}
+            {open ? <CloseIcon className={styles.closeIcon} /> : <MenuIcon className={styles.menuIcon} />}
           </IconButton>
           <Drawer anchor="right" open={open} onClose={toggleDrawer(false)} classes={{ paper: styles.menuContainer }}>
             <div className={styles.listContainer}>

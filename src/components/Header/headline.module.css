@@ -59,6 +59,12 @@
   height: 24px;
 }
 
+.closeIcon,
+.menuIcon {
+  width: 24px;
+  height: 24px;
+}
+
 .logo {
   width: 84px;
   height: 40px;
@@ -75,6 +81,7 @@
   width: 120px;
   border-radius: 30px;
   padding: 4px;
+  box-shadow: 0px 2px 10px 0px rgba(194, 212, 232, 0.8);
 }
 
 .button {
