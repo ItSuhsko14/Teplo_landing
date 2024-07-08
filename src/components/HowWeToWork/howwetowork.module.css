@@ -47,6 +47,7 @@
   align-items: center;
   flex-direction: column;
   height: 224px;
+  padding: 16px;
 }
 .filledbutton {
   width: 398px;

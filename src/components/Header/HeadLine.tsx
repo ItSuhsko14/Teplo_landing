@@ -68,7 +68,9 @@ const HeadLine: React.FC = ({}) => {
       </div>
       <div className={styles.menuButtons}>
         <a href="https://t.me/teplonaperedovu" target="_blank" rel="noopener noreferrer">
-          <img src={telegram} className={styles.telegram} />
+          <div className={styles.telegramcontainer}>
+            <img src={telegram} className={styles.telegram} />
+          </div>
         </a>
         <div className={styles.burgercontainer}>
           <IconButton onClick={toggleDrawer(!open)} color="inherit">
