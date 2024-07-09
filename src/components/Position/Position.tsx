@@ -51,7 +51,7 @@ const Position: React.FC = () => {
   return (
     <>
       <div className={styles.container} id="position">
-        <div className={styles.blockTitle}>Позиції допомоги</div>
+        <div className="title darkColor">Позиції допомоги</div>
 
         <Slider ref={sliderRef} {...settings}>
           {positions.map((item: { name: string; button: string; text: string }, index: number) => (

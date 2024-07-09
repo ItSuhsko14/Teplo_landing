@@ -52,7 +52,7 @@ const OurTeam: React.FC = () => {
   };
   return (
     <div className={styles.container} id="team">
-      <div className={styles.blockTitle}>Наша команда</div>
+      <div className="title darkColor">Наша команда</div>
       <div className={styles.mainText}>
         Наша команда - це люди, які хочуть робити свій вклад і не залишатися осторонь. Вони возять, ш'ють, виготовляють,
         готують, вкладають власні гроші, роблять все, щоб наблизити нашу перемогу. Ти можеш приєднатися до нас своїм
