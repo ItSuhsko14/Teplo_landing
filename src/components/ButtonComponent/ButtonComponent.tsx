@@ -5,8 +5,7 @@ import { Link } from "gatsby";
 
 // Базовий стиль кнопки
 const ButtonBase = styled(Link)`
-  height: 36px;
-  width: 100%;
+  height: 48px;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 600;
@@ -23,6 +22,12 @@ const ButtonBase = styled(Link)`
   padding: 12px;
   text-wrap: nowrap;
   flex: 1;
+
+  ${(props) =>
+    props.width &&
+    css`
+      width: ${props.width};
+    `}
 
   /* Прибираємо стандартне виділення */
   &:focus {
@@ -64,8 +69,8 @@ const ButtonBase = styled(Link)`
     `}
 `;
 
-const Button = ({ to, children, variant }) => (
-  <ButtonBase to={to} variant={variant}>
+const Button = ({ to, children, variant, width }) => (
+  <ButtonBase to={to} variant={variant} width={width}>
     {children}
   </ButtonBase>
 );

@@ -20,10 +20,10 @@ const Hero: React.FC<HeroProps> = ({}) => {
           rel="noopener noreferrer"
         > */}
         {/* <button className={styles.filledbutton}>Підтримати</button> */}
-        <Button to="" variant="filled">
+        <Button to="" variant="filled" width={"191px"}>
           Підтримати
         </Button>
-        <Button to="" variant="outlined">
+        <Button to="" variant="outlined" width={"191px"}>
           Потрібна допомога
         </Button>
         {/* </a> */}
