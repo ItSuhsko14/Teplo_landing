@@ -40,12 +40,12 @@ const ButtonBase = styled(Link)`
     css`
       border: 0px solid white;
       background: hsl(210, 79%, 22%);
-      color: white;
+      color: rgba(252, 252, 252, 1);
 
       &:hover,
       &:active,
       &:visited {
-        color: white;
+        color: rgba(252, 252, 252, 1);
       }
 
       &:active {
@@ -58,8 +58,8 @@ const ButtonBase = styled(Link)`
     props.variant === "outlined" &&
     css`
       border: 1px solid hsl(210, 79%, 22%);
-      background: white;
-      color: hsl(210, 79%, 22%);
+
+      color: rgba(12, 56, 101, 1) !important;
 
       &:active {
         border: 2px solid hsl(210, 79%, 22%);

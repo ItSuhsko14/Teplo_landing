@@ -29,7 +29,7 @@ const Donators = () => {
         ))}
       </div>
       <div className={styles.ctaText}>Впишіть своє ім'я в історію нашої перемоги!</div>
-      <Button to="https://t.me/teplonaperedovu" variant="filled">
+      <Button to="https://t.me/teplonaperedovu" variant="filled" width={}>
         Стати партнером
       </Button>
     </div>

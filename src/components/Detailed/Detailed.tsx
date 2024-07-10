@@ -3,6 +3,7 @@ let styles = require("./detailed.module.css");
 import ImageGallery from "react-image-gallery";
 import Gallery1 from "./Gallery1";
 import "react-image-gallery/styles/css/image-gallery.css";
+import Button from "../ButtonComponent/ButtonComponent";
 
 let rightArrow = require("./buttonLeft.png");
 
@@ -107,6 +108,15 @@ const Detailed: React.FC<DetailedProps> = ({}) => {
         </div>
       </section>
       <Gallery1 />
+
+      <div className={styles.buttonsContainer}>
+        <Button to="" variant="filled" width={"398px"}>
+          Допомогти проєкту
+        </Button>
+        <Button to="" variant="outlined" width={"398px"}>
+          Підписатись на телеграм
+        </Button>
+      </div>
     </>
   );
 };

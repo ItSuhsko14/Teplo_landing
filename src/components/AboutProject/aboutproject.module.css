@@ -22,7 +22,7 @@
   text-align: center;
   color: #d8e4f0;
   margin-top: 48px;
-  margin-bottom: 48px;
+  margin-bottom: 56px;
 }
 
 .description {
@@ -35,7 +35,7 @@
   margin-bottom: 40px;
 }
 
-.buttonDetailed {
+a.buttonDetailed {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 400;

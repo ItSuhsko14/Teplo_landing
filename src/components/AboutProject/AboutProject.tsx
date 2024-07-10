@@ -15,7 +15,9 @@ const AboutProject: React.FC<AboutProjectProps> = ({}) => {
         ношів, газових балонів, лопат. Протягом тижня відбувається збір коштів, закупка і виготовлення. Кожної суботи
         відбувається відправка з Дніпра в точки призначення.
       </div>
-      <div className={styles.buttonDetailed}>Детальніше</div>
+      <a href="#detailed" className={styles.buttonDetailed}>
+        Детальніше
+      </a>
     </section>
   );
 };
