@@ -45,7 +45,10 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  text-align: left;
+  text-align: justify;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
   padding: 0 16px 32px 16px;
 }
 
