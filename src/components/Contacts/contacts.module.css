@@ -1,7 +1,7 @@
 .container {
   margin: 0 16px 64px 16px;
   padding: 40px 16px;
-  background: url("./pattern.png"), linear-gradient(127.48deg, #fffac5 12.35%, #ffef59 95.82%);
+  background: url("./pattern.png"), linear-gradient(127.48deg, #fffac5 12.35%, #fff294 50%);
   border-radius: 30px;
   background-repeat: no-repeat;
 }
