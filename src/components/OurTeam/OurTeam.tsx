@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import TeamCard from "./TeamCard";
 import Button from "../ButtonComponent/ButtonComponent";
-import team from "./team.json";
+let team = require("./team.json");
 let styles = require("./ourTeam.module.css");
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
