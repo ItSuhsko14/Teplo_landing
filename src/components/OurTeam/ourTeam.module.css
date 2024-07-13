@@ -111,15 +111,15 @@
 
 .controlContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 24px;
   align-items: center;
-  width: 112px;
   margin: 0 auto;
   cursor: pointer;
 }
 
 .CTA {
-  margin: 40px 30px 24px 30px;
+  margin: 64px 30px 24px 30px;
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;

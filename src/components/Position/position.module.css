@@ -2,6 +2,11 @@
   overflow: hidden;
   position: relative;
   width: 100%;
+  margin-bottom: 56px;
+}
+
+.title {
+  margin-bottom: 48px;
 }
 
 .slider {
@@ -77,9 +82,9 @@
 
 .controlContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 24px;
   align-items: center;
-  width: 112px;
   margin: 0 auto;
   cursor: pointer;
 }

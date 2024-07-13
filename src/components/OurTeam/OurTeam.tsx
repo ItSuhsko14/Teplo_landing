@@ -3,12 +3,11 @@ import TeamCard from "./TeamCard";
 import Button from "../ButtonComponent/ButtonComponent";
 import team from "./team.json";
 let styles = require("./ourTeam.module.css");
-import leftButton from "./buttonLeft.png";
-import rightButton from "./buttonRight.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./slider.css";
+import ButtonLeftRight from "../ButtonComponent/ButtonsLeftRight";
 
 const OurTeam: React.FC = () => {
   let sliderRef = useRef<Slider | null>(null);
@@ -72,8 +71,8 @@ const OurTeam: React.FC = () => {
         ))}
       </Slider>
       <div className={styles.controlContainer}>
-        <img src={leftButton} alt="leftButton" onClick={previous} />
-        <img src={rightButton} alt="rightButton" onClick={next} />
+        <ButtonLeftRight direction={"left"} onClick={previous} />
+        <ButtonLeftRight direction={"right"} onClick={next} />{" "}
       </div>
       <div className={styles.CTA}>Приєднуйтесь до нашого волонтерського руху!</div>
       <div className={styles.buttonContainer}>

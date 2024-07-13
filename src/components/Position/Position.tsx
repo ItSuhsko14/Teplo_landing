@@ -2,13 +2,12 @@ import React, { useState, useRef } from "react";
 import PositionCard from "./PositionCard";
 import positions from "./positionInfo.json";
 let styles = require("./position.module.css");
-import leftButton from "./buttonLeft.png";
-import rightButton from "./buttonRight.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./slider.css";
 import CTA from "./CTA";
+import ButtonLeftRight from "../ButtonComponent/ButtonsLeftRight";
 
 const Position: React.FC = () => {
   let sliderRef = useRef<Slider | null>(null);
@@ -51,7 +50,7 @@ const Position: React.FC = () => {
   return (
     <>
       <div className={styles.container} id="position">
-        <div className="title darkColor">Позиції допомоги</div>
+        <div className={`title darkColor ${styles.title}`}>Позиції допомоги</div>
 
         <Slider ref={sliderRef} {...settings}>
           {positions.map((item: { name: string; button: string; text: string }, index: number) => (
@@ -66,8 +65,8 @@ const Position: React.FC = () => {
           ))}
         </Slider>
         <div className={styles.controlContainer}>
-          <img src={leftButton} alt="leftButton" onClick={previous} />
-          <img src={rightButton} alt="rightButton" onClick={next} />
+          <ButtonLeftRight direction={"left"} onClick={previous} />
+          <ButtonLeftRight direction={"right"} onClick={next} />
         </div>
       </div>
       <CTA />
