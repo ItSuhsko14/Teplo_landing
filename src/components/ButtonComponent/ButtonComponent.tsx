@@ -3,8 +3,20 @@ import React from "react";
 import styled, { css } from "styled-components";
 import { Link } from "gatsby";
 
+interface ButtonProps {
+  to: string;
+  variant: "filled" | "outlined";
+  width?: string;
+  children: React.ReactNode;
+}
+
+interface StyledButtonProps {
+  variant: "filled" | "outlined";
+  width?: string;
+}
+
 // Базовий стиль кнопки
-const ButtonBase = styled(Link)`
+const ButtonBase = styled(Link)<StyledButtonProps>`
   height: 48px;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -21,7 +33,6 @@ const ButtonBase = styled(Link)`
   outline: none;
   padding: 12px;
   text-wrap: nowrap;
-  flex: 1;
 
   ${(props) =>
     props.width &&
@@ -69,10 +80,9 @@ const ButtonBase = styled(Link)`
     `}
 `;
 
-const Button = ({ to, children, variant, width }) => (
+const Button: React.FC<ButtonProps> = ({ to, children, variant, width }) => (
   <ButtonBase to={to} variant={variant} width={width}>
     {children}
   </ButtonBase>
 );
-
 export default Button;
