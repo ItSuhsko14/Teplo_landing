@@ -10,6 +10,7 @@ const Footer = () => {
     <div className={styles.container}>
       <img src={logo} alt="logo" className={styles.logo} />
       <div className={styles.cta}>Зробити донат</div>
+      <div className={styles.cta}> Зробити донат 2 </div>
       <div className={styles.ancors}>
         <div className={styles.email}>teplonaperedovu@gmail.com</div>
         <div className={styles.socialLinks}>
@@ -17,6 +18,7 @@ const Footer = () => {
             <a href="https://www.instagram.com/artem_ruban84/" target="_blank" rel="noopener noreferrer">
               <img src={instagram} alt="instagram" className={styles.socIcon} />
             </a>
+
             <a href="https://t.me/teplonaperedovu" target="_blank" rel="noopener noreferrer">
               <img src={telegram} alt="telegram" className={styles.socIcon} />
             </a>
