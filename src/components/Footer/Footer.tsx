@@ -10,7 +10,6 @@ const Footer = () => {
     <div className={styles.container}>
       <img src={logo} alt="logo" className={styles.logo} />
       <div className={styles.cta}>Зробити донат</div>
-      <div className={styles.cta}> Зробити донат 2 </div>
       <div className={styles.ancors}>
         <div className={styles.email}>teplonaperedovu@gmail.com</div>
         <div className={styles.socialLinks}>

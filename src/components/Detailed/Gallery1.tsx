@@ -31,12 +31,12 @@ const Gallery1 = () => {
   ];
 
   const images3 = [
-    { original: require("./img11.jpg").default },
-    { original: require("./img12.jpg").default },
-    { original: require("./img13.jpg").default },
-    { original: require("./img14.jpg").default },
-    { original: require("./img15.jpg").default },
-    { original: require("./img16.jpg").default },
+    { original: require("./img11.png").default },
+    { original: require("./img12.png").default },
+    { original: require("./img13.png").default },
+    { original: require("./img14.png").default },
+    { original: require("./img15.png").default },
+    { original: require("./img16.png").default },
   ];
 
   const GalleryRow = ({

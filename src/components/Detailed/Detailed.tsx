@@ -9,47 +9,92 @@ let rightArrow = require("./buttonLeft.png");
 
 const images = [
   {
-    original: require("./img01.jpg").default,
+    original: require("./img01.png").default,
     originalHeight: 258,
     originalWidth: 342,
   },
   {
-    original: require("./img02.jpg").default,
+    original: require("./img02.png").default,
     originalHeight: 258,
     originalWidth: 342,
   },
   {
-    original: require("./img03.jpg").default,
+    original: require("./img03.png").default,
     originalHeight: 258,
     originalWidth: 342,
   },
   {
-    original: require("./img04.jpg").default,
+    original: require("./img04.png").default,
     originalHeight: 258,
     originalWidth: 342,
   },
   {
-    original: require("./img05.jpg").default,
+    original: require("./img05.png").default,
     originalHeight: 258,
     originalWidth: 342,
   },
   {
-    original: require("./img06.jpg").default,
+    original: require("./img06.png").default,
     originalHeight: 258,
     originalWidth: 342,
   },
   {
-    original: require("./img07.jpg").default,
+    original: require("./img07.png").default,
     originalHeight: 258,
     originalWidth: 342,
   },
   {
-    original: require("./img08.jpg").default,
+    original: require("./img08.png").default,
     originalHeight: 258,
     originalWidth: 342,
   },
   {
-    original: require("./img09.jpg").default,
+    original: require("./img09.png").default,
+    originalHeight: 258,
+    originalWidth: 342,
+  },
+  {
+    original: require("./img10.png").default,
+    originalHeight: 258,
+    originalWidth: 342,
+  },
+  {
+    original: require("./img11.png").default,
+    originalHeight: 258,
+    originalWidth: 342,
+  },
+  {
+    original: require("./img12.png").default,
+    originalHeight: 258,
+    originalWidth: 342,
+  },
+  {
+    original: require("./img13.png").default,
+    originalHeight: 258,
+    originalWidth: 342,
+  },
+  {
+    original: require("./img14.png").default,
+    originalHeight: 258,
+    originalWidth: 342,
+  },
+  {
+    original: require("./img15.png").default,
+    originalHeight: 258,
+    originalWidth: 342,
+  },
+  {
+    original: require("./img16.png").default,
+    originalHeight: 258,
+    originalWidth: 342,
+  },
+  {
+    original: require("./img17.png").default,
+    originalHeight: 258,
+    originalWidth: 342,
+  },
+  {
+    original: require("./img18.png").default,
     originalHeight: 258,
     originalWidth: 342,
   },
