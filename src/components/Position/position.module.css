@@ -2,6 +2,7 @@
   overflow: hidden;
   position: relative;
   width: 100%;
+  height: 100%;
   margin-bottom: 56px;
 }
 
@@ -18,6 +19,7 @@
 
 .slideContainer {
   padding: 0 4px 4px 4px;
+  margin-bottom: 40px;
 }
 
 .cardContainer {
@@ -62,6 +64,7 @@
   line-height: 24px;
   text-align: left;
   margin-bottom: 32px;
+  height: 280px;
 }
 
 .cardButton {
