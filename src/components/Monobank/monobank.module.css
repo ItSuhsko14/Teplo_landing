@@ -69,7 +69,8 @@
   margin-bottom: 32px;
 }
 .cta {
-  width: 191px;
+  padding: 0 20px;
+  text-wrap: nowrap;
   height: 48px;
   border-radius: 30px;
   background-color: #b0c8e0;

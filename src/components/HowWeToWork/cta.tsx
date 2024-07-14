@@ -1,25 +1,20 @@
 import React from "react";
 let styles = require("./howwetowork.module.css");
+import Button from "../ButtonComponent/ButtonComponent";
 
 function CTA() {
   return (
     <div className={styles.ctaContainer}>
-      <a
-        href="https://send.monobank.ua/jar/pAH2wwD8n"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <div className={styles.filledbutton}>Підтримати</div>
-      </a>
-      <a
-        href="https://t.me/teplonaperedovu"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <div className={styles.outlinedbutton}>Стати волонтером</div>
-      </a>
+      <Button to="" variant="filled" theme="dark">
+        Підтримати
+      </Button>
+      <Button to="" variant="outlined" theme="dark">
+        Стати волонтером
+      </Button>
     </div>
   );
 }
 
+// https://send.monobank.ua/jar/pAH2wwD8n
+// https://t.me/teplonaperedovu
 export default CTA;

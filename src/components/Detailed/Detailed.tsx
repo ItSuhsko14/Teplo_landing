@@ -123,10 +123,10 @@ const Detailed: React.FC<DetailedProps> = ({}) => {
       <Gallery1 />
 
       <div className={styles.buttonsContainer}>
-        <Button to="" variant="filled" width={"398px"}>
+        <Button to="" variant="filled" theme="light">
           Допомогти проєкту
         </Button>
-        <Button to="" variant="outlined" width={"398px"}>
+        <Button to="" variant="outlined" theme="light">
           Підписатись на телеграм
         </Button>
       </div>

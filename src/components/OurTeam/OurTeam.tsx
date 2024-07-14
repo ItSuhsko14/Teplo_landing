@@ -76,7 +76,7 @@ const OurTeam: React.FC = () => {
       </div>
       <div className={styles.CTA}>Приєднуйтесь до нашого волонтерського руху!</div>
       <div className={styles.buttonContainer}>
-        <Button to="" variant="filled">
+        <Button to="" variant="filled" theme="light">
           Стати волонтером
         </Button>
       </div>

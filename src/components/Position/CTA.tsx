@@ -6,9 +6,9 @@ const CTA = () => {
   return (
     <div className={styles.ctaContainer}>
       <div className={styles.ctaText}>Якщо Ви потребуєте нашої допомоги, залишайте СВІЙ ЗАПИТ</div>
-      <a href="https://t.me/teplonaperedovu" className={styles.CTAbutton}>
+      <Button to="https://t.me/teplonaperedovu" variant="filled" theme="dark">
         Створити запит
-      </a>
+      </Button>
     </div>
   );
 };

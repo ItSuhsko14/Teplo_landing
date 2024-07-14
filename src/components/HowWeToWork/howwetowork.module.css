@@ -46,40 +46,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 24px;
   height: 224px;
   padding: 16px;
-}
-.filledbutton {
-  width: 398px;
-  height: 44px;
-  border: 0px solid white;
-  background: #b0c8e0;
-  color: #061c33;
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 16px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 30px;
-  margin-bottom: 24px;
-}
-
-.outlinedbutton {
-  width: 398px;
-  height: 44px;
-  border: 1px solid #b0c8e0;
-  background: rgba(255, 255, 255, 0);
-  color: #b0c8e0;
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 16px;
-  text-align: center;
-  border-radius: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
