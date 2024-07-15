@@ -35,7 +35,7 @@ const HowWeToWork = () => {
             <img src={arrow} alt="arrow" className={styles.arrow} />
           </div>
           <div className={styles.stepTitle}>
-            <b>Передаємо</b> допомогоу військовим
+            <b>Передаємо</b> допомогу військовим
           </div>
           <div className={`${styles.stepItem} ${styles.rightArrow}`}>
             <img src={img5} alt="img1" />
