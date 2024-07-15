@@ -41,7 +41,7 @@
 }
 
 .ctaContainer {
-  background: url("./ctabackground.png");
+  background: url("./ctabackground.png") center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
