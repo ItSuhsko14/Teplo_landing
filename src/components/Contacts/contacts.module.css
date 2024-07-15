@@ -16,8 +16,8 @@
 
 .buttonsContainer {
   display: flex;
-  justify-content: space-between;
-  margin: 0 67px;
+  justify-content: center;
+  gap: 24px;
 }
 
 .cta {
