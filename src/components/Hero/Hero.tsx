@@ -14,22 +14,12 @@ const Hero: React.FC<HeroProps> = ({}) => {
         військовим, так і підрозділам.
       </div>
       <div className={styles.buttoncontainer}>
-        {/* <a
-          href="https://send.monobank.ua/jar/pAH2wwD8n"
-          target="_blank"
-          rel="noopener noreferrer"
-        > */}
-        {/* <button className={styles.filledbutton}>Підтримати</button> */}
         <Button to="https://send.monobank.ua/jar/pAH2wwD8n" variant="filled" theme="light" width={"191px"}>
           Підтримати
         </Button>
         <Button to="" variant="outlined" theme="light" width={"191px"}>
           Потрібна допомога
         </Button>
-        {/* </a> */}
-        {/* <a href="https://t.me/teplonaperedovu" target="_blank" rel="noopener noreferrer"> */}
-        {/* <button className={styles.outlinedbutton}>Потрібна допомога</button> */}
-        {/* </a> */}
       </div>
     </section>
   );

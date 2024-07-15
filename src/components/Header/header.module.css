@@ -5,14 +5,24 @@
 }
 
 .main {
+  position: relative;
+  width: 100%;
+  padding-top: 4px;
+}
+
+.main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 430px;
+  height: 372px;
   background-image: url("./first-display-background.png");
   background-repeat: no-repeat;
   background-position: top;
-  background-size: 100%;
-  position: relative;
-
-  width: 100%;
-  padding-top: 4px;
+  background-size: cover;
+  /* transform: translateX(-50%); */
+  z-index: -1;
 }
 
 .menuContainer {
