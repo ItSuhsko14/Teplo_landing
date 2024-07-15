@@ -20,7 +20,7 @@ const Hero: React.FC<HeroProps> = ({}) => {
           rel="noopener noreferrer"
         > */}
         {/* <button className={styles.filledbutton}>Підтримати</button> */}
-        <Button to="" variant="filled" theme="light" width={"191px"}>
+        <Button to="https://send.monobank.ua/jar/pAH2wwD8n" variant="filled" theme="light" width={"191px"}>
           Підтримати
         </Button>
         <Button to="" variant="outlined" theme="light" width={"191px"}>

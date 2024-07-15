@@ -70,19 +70,6 @@
   margin-bottom: 32px;
 }
 .cta {
-  padding: 0 20px;
-  text-wrap: nowrap;
-  height: 48px;
-  border-radius: 30px;
-  background-color: #b0c8e0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: Montserrat;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 24px;
-  text-align: left;
   margin-bottom: 48px;
 }
 .progressBarContainer {

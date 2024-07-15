@@ -1,6 +1,7 @@
 import React from "react";
 let styles = require("./monobank.module.css");
 import jar from "./jar.png";
+import Button from "../ButtonComponent/ButtonComponent";
 
 const Monobank = () => {
   return (
@@ -14,7 +15,11 @@ const Monobank = () => {
         <div className={styles.description}>
           <div className={styles.headline}>Наближаємо перемогу разом!</div>
           <div className={styles.text}>Наша тижнева мета -{"\n"} 60 000 грн.</div>
-          <div className={styles.cta}>Поповнити банку</div>
+          <div className={styles.cta}>
+            <Button to="https://send.monobank.ua/jar/pAH2wwD8n" variant="filled" theme="dark">
+              Поповнити банку
+            </Button>
+          </div>
         </div>
       </div>
       <div className={styles.progressBarContainer}>
