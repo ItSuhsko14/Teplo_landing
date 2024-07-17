@@ -29,7 +29,7 @@ body {
 .main {
   width: 100%;
   min-height: 100%;
-  max-width: 480px;
+  max-width: 430px;
   margin: 0 auto;
 }
 .blockTitle {
