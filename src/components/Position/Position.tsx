@@ -5,7 +5,7 @@ let styles = require("./position.module.css");
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./sliderPosition.css";
+import "./slider.css";
 import CTA from "./CTA";
 import ButtonLeftRight from "../ButtonComponent/ButtonsLeftRight";
 
