@@ -13,15 +13,15 @@ const OurTeam: React.FC = () => {
   let sliderRef = useRef<Slider | null>(null);
 
   const images = [
-    { original: require("./img01.jpg").default },
-    { original: require("./img02.jpg").default },
-    { original: require("./img03.jpg").default },
-    { original: require("./img04.jpg").default },
-    { original: require("./img05.jpg").default },
-    { original: require("./img06.jpg").default },
+    { original: require("./img01.png").default },
+    { original: require("./img02.png").default },
+    { original: require("./img03.png").default },
+    { original: require("./img04.png").default },
+    { original: require("./img05.png").default },
+    { original: require("./img06.png").default },
     { original: require("./img07.png").default },
-    { original: require("./img08.jpg").default },
-    { original: require("./img09.jpg").default },
+    { original: require("./img08.png").default },
+    { original: require("./img09.png").default },
   ];
 
   var settings = {
