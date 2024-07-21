@@ -6,7 +6,7 @@ let styles = require("./ourTeam.module.css");
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./slider.css";
+import "./sliderTeam.css";
 import ButtonLeftRight from "../ButtonComponent/ButtonsLeftRight";
 
 const OurTeam: React.FC = () => {
