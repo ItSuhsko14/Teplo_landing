@@ -52,7 +52,6 @@ const HeadLine: React.FC = ({}) => {
     { name: `Детальніше про "Тепло на передову"`, link: "#detailed" },
     { name: "Позиції допомоги", link: "#position" },
     { name: "Наша команда", link: "#team" },
-    { name: "Топ донатери та бізнес, що допомагає", link: "#donators" },
     { name: "Контакти", link: "#contact" },
   ];
 
@@ -76,7 +75,7 @@ const HeadLine: React.FC = ({}) => {
           <IconButton onClick={toggleDrawer(!open)} color="inherit">
             {open ? <CloseIcon className={styles.closeIcon} /> : <MenuIcon className={styles.menuIcon} />}
           </IconButton>
-          <Drawer anchor="right" open={open} onClose={toggleDrawer(false)} classes={{ paper: styles.menuContainer }}>
+          <Drawer anchor="top" open={open} onClose={toggleDrawer(false)} classes={{ paper: styles.menuContainer }}>
             <div className={styles.listContainer}>
               <List>
                 {menuList.map((menu) => (

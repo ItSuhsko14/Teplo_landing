@@ -129,7 +129,9 @@
   position: fixed;
   top: 64px;
   width: 100%;
+  max-width: 430px;
   background: var(--color-80, rgba(216, 228, 240, 0.8));
+  margin: 0 auto;
 }
 
 .listContainer {
