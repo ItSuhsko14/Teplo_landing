@@ -48,7 +48,7 @@ const HeadLine: React.FC = ({}) => {
     { name: "Про проєкт", link: "#about" },
     { name: "Наші досягнення", link: "#stat" },
     { name: "Конвертуємо донати", link: "#howwetowork" },
-    { name: "Наш телеграм", link: "#telegram" },
+    // { name: "Наш телеграм", link: "#telegram" },
     { name: `Детальніше про "Тепло на передову"`, link: "#detailed" },
     { name: "Позиції допомоги", link: "#position" },
     { name: "Наша команда", link: "#team" },

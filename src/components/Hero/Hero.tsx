@@ -17,7 +17,7 @@ const Hero: React.FC<HeroProps> = ({}) => {
         <Button to="https://send.monobank.ua/jar/pAH2wwD8n" variant="filled" theme="light" width={"191px"}>
           Підтримати
         </Button>
-        <Button to="" variant="outlined" theme="light" width={"191px"}>
+        <Button to="https://t.me/teplonaperedovu" variant="outlined" theme="light" width={"191px"}>
           Потрібна допомога
         </Button>
       </div>

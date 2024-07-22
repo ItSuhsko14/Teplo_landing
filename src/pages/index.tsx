@@ -6,11 +6,11 @@ import Header from "../components/Header/Header";
 import AboutProject from "../components/AboutProject/AboutProject";
 import Stat from "../components/Stat/Stat";
 import HowWeToWork from "../components/HowWeToWork/HowWeToWork";
-import Telegram from "../components/Telegram/Telegram";
+// import Telegram from "../components/Telegram/Telegram";
 import Detailed from "../components/Detailed/Detailed";
 import Position from "../components/Position/Position";
 import OurTeam from "../components/OurTeam/OurTeam";
-import Monobank from "../components/Monobank/Monobank";
+// import Monobank from "../components/Monobank/Monobank";
 import Donators from "../components/Donators/Donators";
 import Contacts from "../components/Contacts/Contacts";
 import Footer from "../components/Footer/Footer";
@@ -23,8 +23,8 @@ const IndexPage: React.FC<PageProps> = () => {
       <AboutProject />
       <Stat />
       <HowWeToWork />
-      <Telegram />
-      <Monobank />
+      {/* <Telegram /> */}
+      {/* <Monobank /> */}
       <Detailed />
       <Position />
       <OurTeam />

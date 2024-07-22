@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <div className={styles.container}>
       <img src={logo} alt="logo" className={styles.logo} />
-      <a href="https://send.monobank.ua/jar/pAH2wwD8n">
+      <a href="https://send.monobank.ua/jar/pAH2wwD8n" target="_blank">
         <div className={styles.cta}>Зробити донат</div>
       </a>
       <div className={styles.ancors}>

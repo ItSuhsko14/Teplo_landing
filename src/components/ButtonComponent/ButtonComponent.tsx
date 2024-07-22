@@ -14,6 +14,7 @@ interface StyledButtonProps {
   variant: "filled" | "outlined";
   theme: "light" | "dark";
   width?: string;
+  target?: string;
 }
 
 const defaultFilledTextColor = "rgba(252, 252, 252, 1)";
@@ -22,7 +23,7 @@ const defaultDarkFilledTextColor = "rgba(255, 255, 255, 1)";
 const defaultDarkOutlinedTextColor = "rgba(255, 255, 255, 0.8)";
 
 // Базовий стиль кнопки
-const ButtonBase = styled(Link)<StyledButtonProps>`
+const ButtonBase = styled((props: StyledButtonProps) => <Link {...props} />)`
   width: 100%;
   height: 48px;
   font-family: "Montserrat", sans-serif;
@@ -47,7 +48,6 @@ const ButtonBase = styled(Link)<StyledButtonProps>`
       width: ${props.width};
     `}
 
-  /* Прибираємо стандартне виділення */
   &:focus {
     outline: none;
     box-shadow: none;
@@ -120,7 +120,7 @@ const ButtonBase = styled(Link)<StyledButtonProps>`
       &:active,
       &:visited {
         color: #c8d9e9;
-        border: 2px;
+        border: 2px solid #c8d9e9;
       }
 
       &:active {
@@ -132,7 +132,7 @@ const ButtonBase = styled(Link)<StyledButtonProps>`
 `;
 
 const Button: React.FC<ButtonProps> = ({ to, children, variant, theme, width }) => (
-  <ButtonBase to={to} variant={variant} theme={theme} width={width}>
+  <ButtonBase to={to} variant={variant} theme={theme} width={width} target="_blank">
     {children}
   </ButtonBase>
 );

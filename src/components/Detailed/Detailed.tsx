@@ -168,10 +168,10 @@ const Detailed: React.FC<DetailedProps> = ({}) => {
       <Gallery1 />
 
       <div className={styles.buttonsContainer}>
-        <Button to="" variant="filled" theme="light">
+        <Button to="https://send.monobank.ua/jar/pAH2wwD8n" variant="filled" theme="light">
           Допомогти проєкту
         </Button>
-        <Button to="" variant="outlined" theme="light">
+        <Button to="https://t.me/teplonaperedovu" variant="outlined" theme="light">
           Підписатись на телеграм
         </Button>
       </div>

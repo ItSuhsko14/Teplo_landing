@@ -8,13 +8,6 @@ a {
   text-decoration: none;
 }
 
-a:hover,
-a:active,
-a:visited {
-  text-decoration: none;
-  color: inherit;
-}
-
 :root {
   --title-light-color: #d8e4f0;
   --title-dark-color: #061c33;
