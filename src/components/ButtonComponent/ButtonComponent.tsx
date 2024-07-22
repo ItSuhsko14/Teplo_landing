@@ -83,9 +83,8 @@ const ButtonBase = styled(Link)<StyledButtonProps>`
       &:hover,
       &:active,
       &:visited {
-        color: ${defaultOutlinedTextColor};
-        border: 2px solid hsl(210, 79%, 22%);
-        border-image-source: linear-gradient(275.82deg, #3177be 7.7%, #011121 72.63%);
+        color: black;
+        border: 2px solid #244c74;
       }
     `}
 
@@ -113,7 +112,7 @@ const ButtonBase = styled(Link)<StyledButtonProps>`
     props.variant === "outlined" &&
     props.theme === "dark" &&
     css`
-      border: 2px solid #739ec9;
+      border: 1px solid #739ec9;
       background: none;
       color: #c8d9e9;
 
@@ -121,6 +120,7 @@ const ButtonBase = styled(Link)<StyledButtonProps>`
       &:active,
       &:visited {
         color: #c8d9e9;
+        border: 2px;
       }
 
       &:active {
