@@ -17,11 +17,10 @@
   right: 0;
   width: 430px;
   height: 501px;
-  background-image: url("./aboutProjectBackground.png");
+  background-image: url("./aboutProjectBackground.svg");
   background-repeat: no-repeat;
   background-position: top;
   background-size: 430px auto;
-
   z-index: -1;
 }
 
