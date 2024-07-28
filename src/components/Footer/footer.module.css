@@ -2,6 +2,7 @@
   background-color: #10253b;
   background-image: url("./pattern.png");
   background-repeat: repeat-x;
+  background-position: bottom center;
   display: flex;
   justify-content: center;
   flex-direction: column;
