@@ -1,8 +1,10 @@
 import type { GatsbyConfig } from "gatsby"
+import { title } from "process"
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `ТЕПЛО НА ПЕРЕДОВУ`,
+    siteUrl: `https://www.teplonaperedovu.com.ua`,
   },
   graphqlTypegen: true,
   plugins: [
