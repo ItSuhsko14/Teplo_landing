@@ -18,6 +18,23 @@ const Gallery1 = () => {
     { original: require("./sh08.jpg").default },
     { original: require("./sh09.jpg").default },
     { original: require("./sh10.jpg").default },
+    { original: require("./sh11.jpg").default },
+    { original: require("./sh12.jpg").default },
+    { original: require("./sh13.jpg").default },
+    { original: require("./sh14.jpg").default },
+    { original: require("./sh15.jpg").default },
+    { original: require("./sh17.jpg").default },
+    { original: require("./sh18.jpg").default },
+    { original: require("./sh19.jpg").default },
+    { original: require("./sh20.jpg").default },
+    { original: require("./sh21.jpg").default },
+    { original: require("./sh23.jpg").default },
+    { original: require("./sh24.jpg").default },
+    { original: require("./sh25.jpg").default },
+    { original: require("./sh26.jpg").default },
+    { original: require("./sh27.jpg").default },
+    { original: require("./sh28.jpg").default },
+    { original: require("./sh29.jpg").default },
   ];
 
   const images2 = [
@@ -28,6 +45,9 @@ const Gallery1 = () => {
     { original: require("./gal15.jpg").default },
     { original: require("./gal16.jpg").default },
     { original: require("./gal17.jpg").default },
+    { original: require("./gal18.jpg").default },
+    { original: require("./gal19.jpg").default },
+    { original: require("./gal20.jpg").default },
   ];
 
   const images3 = [

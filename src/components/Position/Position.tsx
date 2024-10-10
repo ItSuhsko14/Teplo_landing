@@ -14,6 +14,7 @@ const Position: React.FC = () => {
 
   const images = [
     { original: require("./noshi.png").default },
+    { original: require("./antidron.png").default },
     { original: require("./covers.png").default },
     { original: require("./coats.png").default },
     { original: require("./spalniki.png").default },
